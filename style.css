@@ -1,0 +1,115 @@
+/* FRAME */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+ 
+}
+
+.phone-frame {
+    width: 360px; /* Largeur du cadre du téléphone */
+    height: 777px; /* Hauteur actuelle du cadre du téléphone */
+    margin-top: -7px; /* Marge négative pour augmenter la hauteur par le dessus */
+    overflow: hidden; /* Cacher le contenu qui dépasse */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur et la hauteur de l'élément */
+}
+
+
+
+.phone-frame .screen {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Faire défiler le contenu en cas de débordement */
+    flex-direction: column;
+    position: relative; /* S'assurer que les éléments enfants sont positionnés relativement à cet élément */
+    justify-content: center;
+}
+
+
+.home-content {
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#container {
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    height: 100%; /* Hauteur totale du parent */
+}
+
+/* PAGE TITLE */
+.go-back {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Couleur de fond blanche pour go-back */
+   /*  border: 1px solid white; Bordure blanche pour harmoniser avec le fond */
+    background-color: rgba(103, 173, 92, 1);
+}
+
+.page-title-analysis {
+    font: 700 16px/1.3em NanumGothic, sans-serif;
+    color: white; /* Couleur du texte du titre #363A3C*/
+    text-align: center; /* Centre le texte horizontalement */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Assure que l'élément est traité comme un bloc pour centrer le texte */
+    width: 100%; /* Assure que le titre occupe toute la largeur disponible */
+}
+
+.page-title-scanner { 
+    font: 700 16px/1.3em NanumGothic, sans-serif;
+    color: white; /* Couleur du texte du titre #363A3C*/
+    text-align: center; /* Centre le texte horizontalement */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Assure que l'élément est traité comme un bloc pour centrer le texte */
+    width: 100%; /* Assure que le titre occupe toute la largeur disponible */
+}
+
+.st0 { 
+    fill: white;  stroke-linecap: round; /* Round the ends of the lines */
+    stroke-linejoin: round; /* Round the corners of the lines */ 
+}
+
+.scaled { transform: scale(1.3); transform-origin: center; /* Adjust the stroke width to make it thinner */ }
+
+.icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Espace intérieur pour le contenu */
+}
+
+.arrow {
+    margin-left: 2px;
+    }
+
+
+.close {
+    margin-right: 2px;
+    }
+
+    .close:active, .close:hover   {
+        fill: rgba(68, 100, 60, 1);
+    }
+
+.arrow:active, .arrow:hover, .st0:hover {
+    fill: rgba(68, 100, 60, 1);
+    stroke: 5px;
+}
+
+
+
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="screen">
+            <div id="homePage" class="home-page">
+                <div class="home-content1">
+                    <img id="img" src="logo.png">
+                        <div class="text">
+                            <h1 class="title">Glucor</h1>
+                            <h2 class="sub-title">색으로 당 함유량 알아보세요</h2>
+                        </div>
+                </div>
+                    <!-- Navigation button without onclick -->
+                    <a href="scanner.html">
+                        <button class="button-시작">시작하기</button>
+                    </a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+     
+        .home-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: white; /*rgba(172, 213, 166, 1)*/
+        }
+
+    .title {
+    font: 700 28pt/1 Raleway, sans-serif;
+    margin-bottom: 16px;
+    color: rgba(103, 173, 92, 1) ;
+    letter-spacing: -0.5%;
+    line-height: 1.1;
+}
+
+    .sub-title {
+    font: 450 15pt Raleway, sans-serif;
+    word-break: keep-all;
+    color: rgba(103, 173, 92, 1) ;
+    letter-spacing: -0.5%;
+    line-height: 1.4;
+}
+
+
+        .home-content1 {
+    display: block;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 80px;
+}
+        .button-시작 {
+            position: center; 
+            bottom: 0px;        
+            font: 700 20px/1 NanumGothic, sans-serif;
+            color:white;
+            height: 45px; /* Hauteur du bouton */
+            width: 280px; /* Longueur du bouton */
+            border-radius: 15px;
+            background-color : rgba(103, 173, 92, 1) ;
+            letter-spacing: 1px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour le bouton */
+            align-items: center;
+        }
+
+        .button-시작:active, .button-시작:hover {
+            background-color: rgba(68, 100, 60, 1);
+            color : white;
+
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-top: auto;
+            width: 175px; 
+            height : 175px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+            border-radius: 55px;
+        }
+
+        .text {
+            margin-top: 32px;
+        }
+    
+    </style>
+</body>
+</html>
