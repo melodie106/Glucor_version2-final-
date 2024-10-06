@@ -29,7 +29,7 @@
           </svg>       
         </div>
     </a>
-        <div class="page-title-analysis">요약</div>
+        <div class="page-title-analysis">영양 성분의 분석</div>
         
         <a href="homepage.html" >
         <div class="icon-container"> 
@@ -41,9 +41,8 @@
       </a>
       </div>
 
+<div class="screen1">
 
-
-<div class="screen">
  
 <div class="bloc-alignement-imagetext">
     <img
@@ -55,11 +54,32 @@
     <div class="alignement-info-produit">
         <div id="식품명"class="product-title"></div>
         <div id="불명" class="불명"></div>
+
+        <div id="progressContainerMain">
+          <div class="progress-bar-main">
+              <div class="section-main dark-green">
+                  <span>A</span>
+              </div>
+              <div class="section-main green">
+                  <span>B</span>
+              </div>
+              <div class="section-main yellow">
+                  <span>C</span>
+              </div>
+              <div class="section-main orange">
+                  <span>D</span>
+              </div>
+              <div class="section-main red">
+                  <span>E</span>
+              </div>
+          </div>
+      </div>      
+
         <div class="rectangle-overall">
             <div class="product-overallrank">
               <div class="overall-rank-circle">
                 <div id="총점수" class="overall-rank-letter"></div></div>
-                <div class="p1">전채 평균
+                <div class="p1">영양 총점
                 <div class="commentaire-overall-rank"></div></div>
               </div>
             </div>
@@ -67,18 +87,19 @@
     <div id="productInfo"></div>
 </div>
 
+</div>
 <div class="hr2"></div>
+<div class="screen2">
 
 <div class="bloc-h2-1">
-  <div class="h2">부정적인 요소</div>
+  <div class="h2">영양 정보</div>
     <div class="bloc-st">
       <div class="base">전체</div>
       <div class="base-quantite">100g 기준</div>
   </div>
 </div>
 
-
-<div class="alignement-elements-nutrition">
+<div class="alignement-elements-칼로리" id="data-칼로리">
   <div class="bloc-infos-nutrition">
       <svg class="icon" id="uuid-983adbda-2dc1-43bb-bbc7-77031545207f" data-name="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.57 25.22">
         <defs>
@@ -98,28 +119,28 @@
         <path class="uuid-397f4629-b0db-480b-a688-fcbdc039ef1e" d="M11.72,12.98c.55-.12,1.62,1.1,1.79,2.28.15,1.04.25,3.35.4,3.38.3.06.69-1.7,1.07-1.76.58-.1,1.68,1.3,1.79,2.8.14,1.92-1.37,3.61-2.77,4.38-1.17.65-2.3.66-2.8.67-.62,0-2.02,0-3.33-.95-.2-.14-1.92-1.44-2.03-3.61-.09-1.7.85-3.45,1.54-3.43.46,0,.61,2.66.95,2.54.16-.06.34-2.14.49-2.54,0,0,.15-.99.69-1.59.56-.63.77,1.05,1.27.54.74-.76.56-2.61.96-2.7Z"/>
       </svg>
       <div class="alignement-infos-nutrition">
-          <div class="식품명">열량</div>
-          <div class="점수-열량">등급 미정</div>
+          <div class="식품명">칼로리</div>
+          <div class="점수-칼로리">등급 미정</div>
       </div>
   </div>
   <div class="bloc-results">
-     <div class="quantite-열량"><span id="열량"></span> kj</div>
+     <div class="quantite-칼로리"><span id="칼로리"></span> kcal</div>
      <div class="rank-container">
-      <div class="rank-열량"></div>
-      <a id="열량Link"><svg class="img-3" fill="#878D91" height="15px" width="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-        viewBox="0 0 330 330" xml:space="preserve">
-     <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
-       c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
-       C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
-       C255,161.018,253.42,157.202,250.606,154.389z"/>
-     </svg></a>
+      <div class="rank-칼로리"></div>
+      <a id="칼로리Link">
+        <svg class="img-3" fill="#878D91" height="15px" width="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+           <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
+             c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
+             C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
+             C255,161.018,253.42,157.202,250.606,154.389z"/>
+        </svg>
+      </a>      
         </div>
       </div>
     </div>
-<hr>
 
-
-<div class="alignement-elements-nutrition">
+<div class="alignement-elements-nutrition-container">
+<div class="alignement-elements-나트륨" id="data-나트륨">
   <div class="bloc-infos-nutrition">
     <svg class="icon" id="uuid-d5c06ee0-afe1-446c-b537-1fea3fedbede" data-name="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.56 25.19">
       <defs>
@@ -169,11 +190,8 @@
        </div>
      </div>
    </div>
-   <hr>
-
-
       
-<div class="alignement-elements-nutrition">
+<div class="alignement-elements-포화지방" id="data-포화지방">
         <div class="bloc-infos-nutrition">
           <svg class="icon" id="uuid-8bbc0de4-7331-4cc0-8564-88418b56c003" data-name="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.46 24.66">
             <defs>
@@ -220,10 +238,8 @@
              </div>
            </div>
          </div>
-<hr>
 
-
-<div class="alignement-elements-nutrition">
+<div class="alignement-elements-당류" id="data-당류">
             <div class="bloc-infos-nutrition">
               <svg class="icon" id="uuid-b5c67973-8059-4302-8386-c4c5d803b2b1" data-name="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.45 24.61">
                 <defs>
@@ -264,15 +280,7 @@
                </div>
              </div>
 
-
-<div class="bloc-h2-2">
-  <div class="h2">긍정적인 요소</div>
-  <div class="bloc-st">
-    <div class="base">전체</div>
-    <div class="base-quantite">100g 기준</div>
-</div>
-</div>
-<div class="alignement-elements-nutrition">
+<div class="alignement-elements-과일과채소" id="data-과일과채소">
     <div class="bloc-infos-nutrition">
       <svg class="icon" id="uuid-7b2e4a65-03ae-49aa-8d7c-323b3c24e30f" data-name="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.86 24.8">
         <defs>
@@ -333,10 +341,8 @@
          </div>
        </div>
      </div>
-<hr>
 
-
-<div class="alignement-elements-nutrition">
+<div class="alignement-elements-섬유" id="data-섬유">
     <div class="bloc-infos-nutrition">
       <svg class="icon" id="uuid-0ee36814-e751-4fcd-a84a-0be24510289d" data-name="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.35 24.25">
         <defs>
@@ -392,10 +398,8 @@
          </div>
        </div>
      </div>
-<hr>
 
-
-<div class="alignement-elements-nutrition">
+<div class="alignement-elements-단백질" id="data-단백질">
     <div class="bloc-infos-nutrition">
       <svg class="icon" id="uuid-f9a29e3f-4762-417f-b02d-74b25047b349" data-name="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.8 25.02">
         <defs>
@@ -433,23 +437,23 @@
          </div>
        </div>
      </div>
-<hr>
+    </div>
 
 
  <!-- Ajoutez cette section pour la sous-page -->
  <div id="overlay"></div>
- <div id="subpage" class="subpage">
-  <div class="subpage-content">
-    <div class="rectangle">
+  <div id="subpage" class="subpage">
+    <div class="subpage-content">
+     <div class="rectangle">
       <span id="close-btn" class="drag-handle"></span>
       <div class="nutrientName" id="nutrientName"></div>
     </div>
-    <div class="rectangle2">
-      <div class="rank-subpage">양</div>
-      <div class="nutrientValue" id="nutrientValue"></div>
-    </div>
+  <div class="rectangle2">
+    <div class="rank-subpage">함량</div>
+    <div class="nutrientValue" id="nutrientValue"></div>
+  </div>
 
-    <div class="hr3"></div>
+<div class="hr3"></div>
 
     <div class="rectangle2">
     <div class="rank-subpage">평균</div>
@@ -464,11 +468,11 @@
       </div>
 
 <div class="rectangle3">
-      <div class="rank-subpage">렌킹</div>
+      <div class="rank-subpage">등급</div>
       <div class="scale-container">
-          <div class="scale-bar">
-              <div class="filled-bar"></div>
-          </div>
+          <div class="scale-bar"> 
+            <div id="progressContainer"></div>                              
+            <svg class="arrow-up" width="12px" height="12px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" ><path d="M8 1.25a2.101 2.101 0 00-1.785.996l.64.392-.642-.388-5.675 9.373-.006.01a2.065 2.065 0 00.751 2.832c.314.183.67.281 1.034.285h11.366a2.101 2.101 0 001.791-1.045 2.064 2.064 0 00-.006-2.072L9.788 2.25l-.003-.004A2.084 2.084 0 008 1.25z"/></svg>          </div>
           <div class="scale-labels"></div>                
       </div>
     </div>
@@ -505,15 +509,17 @@ hr {
     margin-left: 0;
     width: calc(100% + 32px); /* Largeur complète avec compensation de la marge gauche */
     height: 8px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(248, 248, 248);
+    border-top: 0 2px 2px rgba(0, 0, 0, 0.05); /* Bordure blanche pour harmoniser avec le fond */
     position: relative;
     left: -16px; /* Décale la ligne vers la gauche pour compenser la marge de l'élément parent */
 }
 
+
 .hr3 {
   border: 1px solid white; /* Bordure blanche pour harmoniser avec le fond */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ajoute une ombre portée pour un effet de surélévation */
-    border-bottom: 1.3px solid rgb(243, 243, 243); /* Bordure subtile */
+    border-bottom: 3px solid rgb(243, 243, 243); /* Bordure subtile */
     margin-top : 8px;
     margin-bottom : 8px;
     margin-left : 16px;
@@ -552,15 +558,23 @@ hr {
 }
 
 
-.phone-frame .screen {
-    width: 90%;
-    height: 100%;
-    overflow-y: auto; /* Faire défiler le contenu en cas de débordement */
+.phone-frame {
     background-color: white;
     flex-direction: column;
-    position: relative; /* S'assurer que les éléments enfants sont positionnés relativement à cet élément */
     justify-content: center;
-    padding: 16px;
+   }
+.screen1 {
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.screen2 {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1px;
+    background-color: rgb(248, 248, 248); /* Changez cette couleur à celle que vous souhaitez */   
 }
 
 /* IMAGE PRODUCT INFO */
@@ -571,7 +585,7 @@ hr {
     }
     .img2 {
       aspect-ratio: 1;
-      object-fit: fill;
+      object-fit: contain;
       object-position: center;
       width: 120px;
     }
@@ -590,11 +604,12 @@ hr {
       font: 450 18px/1.3em NanumGothic, sans-serif;
       letter-spacing: -0.5%;
       margin-bottom: 4px;
+      margin-top: -6px;
     }
 
     .rectangle-overall{
-      width: 70%;
       margin-top: 12px;
+      margin-bottom: -4px;
       border-radius: 8px;       /* Coins arrondis */
       background-color: rgb(248, 248, 248);
     }
@@ -602,12 +617,45 @@ hr {
     .불명 {
       color: #888888;
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       font: 300 14px/1 NanumGothic, sans-serif;
       letter-spacing: -0.5%;
       text-align: left;
       text-justify: inter-word;
     }
+
+    #progressContainerMain {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.progress-bar-main {
+    display: flex; /* Utiliser Flexbox pour répartir les sections */
+    width: 100%;
+    height: 11px; /* Ajuster la hauteur de la barre */
+}
+
+.section-main {
+    flex: 1; /* Chaque section prend une largeur égale */
+    display: flex;
+    justify-content: center; /* Centrer les lettres horizontalement */
+    align-items: center; /* Centrer les lettres verticalement */
+    color: white; /* Couleur du texte */
+    font: 700 9px/1 NanumGothic, sans-serif;
+  }
+
+/* Arrondir les coins seulement pour les extrémités */
+.section-main:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.section-main:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
     
     .product-overallrank {
       display: flex;
@@ -648,15 +696,39 @@ hr {
 
 
 /* ANALYSIS */
-    .alignement-elements-nutrition {
-      display: flex;
-      margin-top: 8px;
-      min-height: 55px;
-      width: 100%;
-      align-items: center;
-      justify-content: space-between;
-      /*border-bottom: 1px solid grey; /* Changez la couleur et l'épaisseur selon vos besoins */
-    }
+.alignement-elements-칼로리, 
+.alignement-elements-나트륨,
+.alignement-elements-포화지방, 
+.alignement-elements-당류, 
+.alignement-elements-과일과채소, 
+.alignement-elements-섬유,
+.alignement-elements-단백질 {
+    border: 3px solid white; /* Bordure blanche pour harmoniser avec le fond */
+    margin: 8px 12px; /* Réduit la marge à droite et à gauche, 12px pour un espace réduit */
+    display: flex;      
+    min-height: 68px; /* Augmente la hauteur minimale pour des cartes plus grandes */
+    width: calc(100% - 24px); /* Réduit la largeur pour compenser les marges gauche et droite */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px; /* Augmente l'espace intérieur à gauche */
+    padding-right: 12px; /* Augmente l'espace intérieur à droite */
+    background-color: white;
+    border-radius: 12px; /* Garde des bords arrondis mais plus subtils */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Réduit l'effet d'ombre pour un aspect plus subtil */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation plus rapide et moins d'ombre au survol */
+}
+
+/* Animation au survol des cartes */
+.alignement-elements-칼로리:hover, 
+.alignement-elements-나트륨:hover,
+.alignement-elements-포화지방:hover, 
+.alignement-elements-당류:hover, 
+.alignement-elements-과일과채소:hover, 
+.alignement-elements-섬유:hover,
+.alignement-elements-단백질:hover {
+    transform: translateY(-3px); /* Réduit l'élévation des cartes au survol */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Réduit l'ombre au survol pour un effet plus léger */
+}
 
     
     .bloc-infos-nutrition {
@@ -687,13 +759,14 @@ hr {
 }
 
 .bloc-h2-1 {
-      display: flex;
-    margin-top: 16px;
-    width: 100%;
+    display: flex;
+    margin-top: 1px;
     align-items: center;
     gap: 40px 51px;
     color: #000;
     justify-content: space-between;
+    margin-left: 16px;
+    margin-right : 16px;
 }
 
 .h2 {
@@ -702,6 +775,7 @@ hr {
   align-self: stretch;
   margin: auto 0;
   color: #363A3C;
+
 }
 
 .p1 {
@@ -713,12 +787,12 @@ hr {
 
 .base-quantite{
     font: 400 13px NanumGothic, sans-serif;
-    color: #b0b0b0;
+    color: #888888;
 }
 
 .base{
     font: 400 13px NanumGothic, sans-serif;
-    color: #b0b0b0;
+    color: #888888;
 
 }
 
@@ -729,7 +803,7 @@ hr {
     gap: -10px 0px;
     text-align: right;
     justify-content: space-between;
-    width: 139px;
+    width: 138px;
     margin: auto 0;
 }
 
@@ -742,6 +816,7 @@ hr {
       margin: auto 0;
       margin-right: 12px;
       margin-left: 8px;
+      
     }
     .alignement-infos-nutrition {
       align-self: stretch;
@@ -750,6 +825,11 @@ hr {
       justify-content: center;
       margin: auto 0;
 }
+
+* {
+    box-sizing: border-box;
+}
+
     
     .식품명 {
       color: #363A3C;
@@ -757,7 +837,7 @@ hr {
       letter-spacing: -0.5%;
     }
 
-    .점수-열량, .점수-나트륨,.점수-포화지방,.점수-당류,.점수-과일과채소,.점수-섬유,.점수-단백질 {
+    .점수-칼로리, .점수-나트륨,.점수-포화지방,.점수-당류,.점수-과일과채소,.점수-섬유,.점수-단백질 {
       color: #888888;
       margin-top: 6px;
       font: 400 14px/1 NanumGothic, sans-serif;
@@ -769,11 +849,11 @@ hr {
       align-items: center;
       gap: 8px;
       justify-content: end;
-      width: 138px;
+      width: 148px;
       margin: auto 0;
 } 
 
-.quantite-열량, .quantite-나트륨, .quantite-포화지방, .quantite-당류, .quantite-과일과채소, .quantite-섬유, .quantite-단백질 {
+.quantite-칼로리, .quantite-나트륨, .quantite-포화지방, .quantite-당류, .quantite-과일과채소, .quantite-섬유, .quantite-단백질 {
   color: #888888;
     align-self: stretch;
     width: 69px;
@@ -781,7 +861,7 @@ hr {
     font: 400 14px/1 NanumGothic, sans-serif;
 }
 
-.rank-열량, .rank-나트륨, .rank-포화지방, .rank-당류, .rank-과일과채소, .rank-섬유, .rank-단백질 {
+.rank-칼로리, .rank-나트륨, .rank-포화지방, .rank-당류, .rank-과일과채소, .rank-섬유, .rank-단백질 {
   background-color: #4D5256;
     border-radius: 50%;
     align-self: stretch;
@@ -799,8 +879,8 @@ hr {
     align-items: center;
     gap: 15px;
     justify-content: space-between;
-    width: 61px;
-    margin: auto 0;
+    width: 51px;
+    margin: 0;
   }
 
   .img-3 {
@@ -810,13 +890,12 @@ hr {
   width: 18px;
   align-self: stretch;
   margin: auto 0;
-  transform: rotate(90deg); /* Scale and rotate the SVG by 45 degrees */
   stroke-linejoin: round; /* Round the corners of the lines */ 
 }
 
 
     a:hover .img-3 {
-      transform: rotate(270deg); /* Retourne la flèche */
+      transform: rotate(90deg); /* Retourne la flèche */
       transition: transform 0.6s ease; /* Animation fluide */
     }
 
@@ -900,6 +979,13 @@ hr {
     }              
 
         /* SCALE */
+        .scale-section {
+    width: 20%;
+    margin: 0; /* Assurez-vous qu'il n'y a pas de marge */
+    padding: 0; /* Assurez-vous qu'il n'y a pas de padding qui ajoute à la largeur */
+    box-sizing: border-box; /* Pour éviter que les bordures affectent la largeur */
+}
+
         .scale-container {
             margin-left : 16px;
             margin-right : 16px;
@@ -909,24 +995,26 @@ hr {
         .scale-bar {
             width: 100%;
             height: 15px;
-            background-color: #eee; /* couleur de fond de la barre */
+            background-color: transparent; /* couleur de fond de la barre */
             position: relative;
+            
         }
 
         
         .filled-bar {
             height: 100%;
             width: 0%;
-            background-color: grey; /* couleur par défaut du remplissage */
+            background-color: transparent; /* couleur par défaut du remplissage */
             transition: width 0.1s ease-in-out;
         }
 
         .scale-labels {
             display: flex;
-            margin-top: 4px;
+            margin-top: 2px;
             align-items: center;
-            justify-content: space-between;
+            justify-content: relative;
             font: 400 10px NanumGothic, sans-serif;
+            color: #363A3C;
         }
 
         .nutrientName {
@@ -1053,15 +1141,115 @@ hr {
     visibility: visible;
 }
 
+.arrow-up {
+    position: absolute;
+    bottom: 100%; /* Place la flèche au-dessus de la barre */
+    transform: rotate(180deg); /* Faites pivoter la flèche pour qu'elle pointe vers la droite */
+    fill : grey;
+    margin-bottom: 1px; /* Réduit l'espace sous le bouton pour rapprocher le texte */
+  }
 
-    </style>
+  #progressContainer {
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Style général pour la barre de progression */
+.progress-bar {
+    display: flex;
+    width: 100%;
+    height: 13px;
+    border-radius: 10px;
+    overflow: hidden; /* Assurez-vous que tout dépassement est masqué */
+}
+
+/* Arrondir les coins seulement pour les extrémités */
+.section:first-child {
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.section:last-child {
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+/* Gardez les sections flexibles */
+.section {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.dark-green {
+    background-color: rgba(55, 125, 69, 1);
+}
+
+.green {
+    background-color: rgba(96, 186, 68, 1);
+}
+
+.yellow {
+    background-color: rgba(248, 205, 70, 1);
+}
+
+.orange {
+    background-color: rgba(226, 130, 48, 1);
+}
+
+.red {
+    background-color: rgba(200, 56, 29, 1);
+}
 
     </style>
 
 <script src="html5-qrcode.min.js"></script>
+
 <script>
-    
-   
+function reorderNutrientBlocksAlternately() {
+    const dataContainer = document.querySelector('.alignement-elements-nutrition-container'); // Conteneur parent
+
+    // Récupérer chaque élément de nutriment avec sa quantité
+    const blocks = Array.from(dataContainer.children).map(block => {
+        const quantitySpan = block.querySelector('.bloc-results span'); // Sélectionne l'élément contenant la quantité
+        const quantityText = quantitySpan ? quantitySpan.textContent.replace(/[^\d.]/g, '') : '0'; // Extraire les chiffres (ignorer les unités)
+        const quantity = parseFloat(quantityText) || 0; // Convertir en nombre
+
+        const nutrientName = block.querySelector('.식품명') ? block.querySelector('.식품명').textContent : '';
+
+        return { block, quantity, nutrientName };
+    });
+
+    // Nutriments dans chaque groupe
+    const firstGroup = ['단백질', '섬유', '과일과채소']; // Classé du plus haut au plus bas
+    const secondGroup = ['나트륨', '포화지방', '당류']; // Classé du plus bas au plus haut
+
+    // Trier les nutriments dans chaque groupe
+    const firstGroupSorted = blocks
+        .filter(item => firstGroup.includes(item.nutrientName) && item.quantity !== 0)
+        .sort((a, b) => b.quantity - a.quantity); // Du plus haut au plus bas
+
+    const secondGroupSorted = blocks
+        .filter(item => secondGroup.includes(item.nutrientName) && item.quantity !== 0)
+        .sort((a, b) => a.quantity - b.quantity); // Du plus bas au plus haut
+
+    // Récupérer les éléments à zéro (pour les placer à la fin)
+    const zeroQuantityItems = blocks.filter(item => item.quantity === 0);
+
+    // Alternance entre les deux groupes (sauf les éléments à zéro)
+    const sortedBlocks = [];
+    while (firstGroupSorted.length || secondGroupSorted.length) {
+        if (firstGroupSorted.length) sortedBlocks.push(firstGroupSorted.shift());
+        if (secondGroupSorted.length) sortedBlocks.push(secondGroupSorted.shift());
+    }
+
+    // Ajouter les éléments avec des quantités égales à zéro à la fin
+    zeroQuantityItems.forEach(item => sortedBlocks.push(item));
+
+    // Réorganiser les blocs dans le conteneur parent
+    sortedBlocks.forEach(item => {
+        dataContainer.appendChild(item.block);
+    });
+}
 
 function displayProductDetails(product) {
     console.log('Displaying product details:', product);
@@ -1070,7 +1258,7 @@ function displayProductDetails(product) {
     document.getElementById('불명').textContent = product.불명;
     document.getElementById('총점수').textContent = product.총점수;
     document.getElementById('이미지URL').src = product.이미지URL;
-    document.getElementById('열량').textContent = product.열량;
+    document.getElementById('칼로리').textContent = product.칼로리;
     document.getElementById('나트륨').textContent = product.나트륨;
     document.getElementById('포화지방').textContent = product.포화지방;
     document.getElementById('당류').textContent = product.당류;
@@ -1079,14 +1267,18 @@ function displayProductDetails(product) {
     document.getElementById('단백질').textContent = product.단백질;
 
     update총점수(product.총점수);
-    update열량(product.열량);
+    update칼로리(product.칼로리);
     update나트륨(product.나트륨);
     update포화지방(product.포화지방);
     update당류(product.당류);
     update과일과채소(product.과일과채소);
     update섬유(product.섬유);
     update단백질(product.단백질);
+
+    // Appeler la fonction de tri APRÈS la mise à jour des valeurs
+    reorderNutrientBlocksAlternately();
 }
+
 
 function update총점수(score) {
     const rankCircle = document.querySelector('.overall-rank-circle');
@@ -1095,15 +1287,15 @@ function update총점수(score) {
 
     let rankInfo;
   if (score >= -15 && score <= -1) {
-    rankInfo = { color: 'rgba(55, 125, 69, 1)', letter: 'A', comment: '매우 낮음' }; // Vert
+    rankInfo = { color: 'rgba(55, 125, 69, 1)', letter: 'A', comment: '건강에 매우 좋음' }; // Vert
   } else if (score >= 0 && score <= 2) {
-    rankInfo = { color: 'rgba(96, 186, 68, 1)', letter: 'B', comment: '낮음' }; // Vert clair
+    rankInfo = { color: 'rgba(96, 186, 68, 1)', letter: 'B', comment: '건강에 좋음' }; // Vert clair
   } else if (score >= 3 && score <= 10) {
-    rankInfo = { color: 'rgba(248, 205, 70, 1)', letter: 'C', comment: '보통' }; // Jaune
+    rankInfo = { color: 'rgba(248, 205, 70, 1)', letter: 'C', comment: '건강에 적당함' }; // Jaune
   } else if (score >= 11 && score <= 18) {
-    rankInfo = { color: 'rgba(226, 130, 48, 1)', letter: 'D', comment: '높음' }; // Rouge
+    rankInfo = { color: 'rgba(226, 130, 48, 1)', letter: 'D', comment: '건강에 나쁨' }; // Rouge
   } else if (score >= 19 && score <= 40) {
-    rankInfo = { color: 'rgba(200, 56, 29, 1)', letter: 'E', comment: '매우 높음' }; // Rouge foncé
+    rankInfo = { color: 'rgba(200, 56, 29, 1)', letter: 'E', comment: '건강에 매우 나쁨' }; // Rouge foncé
   } 
 
     // Appliquer les changements
@@ -1114,34 +1306,34 @@ function update총점수(score) {
 }
 
 
-function update열량(score) { //rank pour calorie 
-    const rankCircle = document.querySelector('.rank-열량'); // Sélecteur pour le cercle de rang
-    const rankNumber = document.querySelector('.quantite-열량'); // Sélecteur pour la quantité
-    const rankComment = document.querySelector('.점수-열량'); // Sélecteur pour le commentaire
+function update칼로리(score) { //rank pour calorie 
+    const rankCircle = document.querySelector('.rank-칼로리'); // Sélecteur pour le cercle de rang
+    const rankNumber = document.querySelector('.quantite-칼로리'); // Sélecteur pour la quantité
+    const rankComment = document.querySelector('.점수-칼로리'); // Sélecteur pour le commentaire
 
     let rankInfo;
-    if (score > 3350) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '10', comment: '매우 높음' }; // 10
-    } else if (score > 3015) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '9', comment: '매우 높음' }; // 9
+    if (score > 801) {
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 높은 칼로리' }; // 10
+    } else if (score > 721) {
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 높은 칼로리' }; // 9
     } else if (score > 2680) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '8', comment: '높음' }; // 8
-    } else if (score > 2345) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '7', comment: '높음' }; // 7
-    } else if (score > 2010) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '6', comment: '보통' }; // 6
-    } else if (score > 1675) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '5', comment: '보통' }; // 5
-    } else if (score > 1340) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)', rank: '4',comment: '낮음' }; // 4
-    } else if (score > 1005) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: '3', comment: '낮음' }; // 3
-    } else if (score > 670) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '2', comment: '매우 낮음' }; // 2
-    } else if (score > 335) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: '1', comment: '매우 낮음' }; // 1
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '높은 칼로리' }; // 8
+    } else if (score > 641) {
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '높은 칼로리' }; // 7
+    } else if (score > 480) {
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '적당한 칼로리' }; // 6
+    } else if (score > 400) {
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '적당한 칼로리' }; // 5
+    } else if (score > 320) {
+      rankInfo = { color: 'rgba(96, 186, 68, 1)', rank: 'B',comment: '낮은 칼로리' }; // 4
+    } else if (score > 240) {
+      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: 'B', comment: '낮은 칼로리' }; // 3
+    } else if (score > 160) {
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '매우 낮은 칼로리' }; // 2
+    } else if (score > 80) {
+      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: 'A', comment: '매우 낮은 칼로리' }; // 1
     } else {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: '0', comment: '매우 낮음' }; // 0
+      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: 'A', comment: '매우 낮은 칼로리' }; // 0
     }
     
     // Appliquer les changements
@@ -1162,27 +1354,27 @@ function update나트륨(score) {
 
     let rankInfo;
     if (score > 900) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '10',comment: '매우 높음' }; // 10
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E',comment: '매우 짬' }; // 10
     } else if (score > 810) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '9',comment: '매우 높음' }; // 9
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E',comment: '매우 짬' }; // 9
     } else if (score > 720) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '8',comment: '높음' }; // 8
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D',comment: '짬' }; // 8
     } else if (score > 630) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '7', comment: '높음' }; // 7
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '짬' }; // 7
     } else if (score > 540) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '6', comment: '보통' }; // 6
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '적당함' }; // 6
     } else if (score > 450) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '5', comment: '보통' }; // 5
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '적당함' }; // 5
     } else if (score > 360) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: '4', comment: '낮음' }; // 4
+      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: 'B', comment: '짜지 않음' }; // 4
     } else if (score > 270) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: '3', comment: '낮음' }; // 3
+      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: 'B', comment: '짜지 않음' }; // 3
     } else if (score > 180) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '2', comment: '매우 낮음' }; // 2
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '전혀 짜지 않음' }; // 2
     } else if (score > 90) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: '1',comment: '매우 낮음' }; // 1
+      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: 'A',comment: '전혀 짜지 않음' }; // 1
     } else {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '0', comment: '매우 낮음' }; // 0
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '전혀 짜지 않음' }; // 0
     }
     
     // Appliquer les changements
@@ -1203,27 +1395,27 @@ function update포화지방(score) {
 
     let rankInfo;
     if (score > 10) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '10', comment: '매우 높음' }; // 10
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 높은 포화지방' }; // 10
     } else if (score > 9) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '9', comment: '매우 높음' }; // 9
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 높은 포화지방' }; // 9
     } else if (score > 8) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '8', comment: '높음' }; // 8
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '높은 포화지방' }; // 8
     } else if (score > 7) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '7', comment: '높음' }; // 7
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '높은 포화지방' }; // 7
     } else if (score > 6) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '6', comment: '보통' }; // 6
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '적당한 포화지방' }; // 6
     } else if (score > 5) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '5', comment: '보통' }; // 5
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '적당한 포화지방' }; // 5
     } else if (score > 4) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: '4', comment: '낮음' }; // 4
+      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: 'B', comment: '낮은 포화지방' }; // 4
     } else if (score > 3) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: '3', comment: '낮음' }; // 3
+      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: 'B', comment: '낮은 포화지방' }; // 3
     } else if (score > 2) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '2', comment: '매우 낮음' }; // 2
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '매우 좋은 포화지방' }; // 2
     } else if (score > 1) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '1', comment: '매우 낮음' }; // 1
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '매우 낮은 포화지방' }; // 1
     } else {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '0', comment: '매우 낮음' }; // 0
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '매우 낮은 포화지방' }; // 0
     }
     
     // Appliquer les changements
@@ -1244,27 +1436,27 @@ function update당류(score) {
 
     let rankInfo;
     if (score >= 45) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '10', comment: '매우 나쁨' }; // 10
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 달음' }; // 10
     } else if (score >= 40) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '9', comment: '매우 나쁨' }; // 9
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 달음' }; // 9
     } else if (score >= 36) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '8', comment: '나쁨' }; // 8
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '달음' }; // 8
     } else if (score >= 31) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '7', comment: '나쁨' }; // 7
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '달음' }; // 7
     } else if (score >= 27) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '6', comment: '보통' }; // 6
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '보통' }; // 6
     } else if (score >= 22.5) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '5',comment: '보통' }; // 5
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C',comment: '보통' }; // 5
     } else if (score >= 18) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)', rank: '4',comment: '낮음' }; // 4
+      rankInfo = { color: 'rgba(96, 186, 68, 1)', rank: 'B',comment: '달지 않음' }; // 4
     } else if (score >= 13.5) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: '3',comment: '낮음' }; // 3
+      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: 'B',comment: '달지 않음' }; // 3
     } else if (score >= 9) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: '2',comment: '매우 낮음' }; // 2
+      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: 'A',comment: '전혀 달지 않음' }; // 2
     } else if (score >= 4.5) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: '1',comment: '매우 낮음' }; // 1
+      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: 'A',comment: '전혀 달지 않음' }; // 1
     } else {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '0', comment: '매우 낮음' }; // 0
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '전혀 달지 않음' }; // 0
     }
     
     // Appliquer les changements
@@ -1285,17 +1477,13 @@ function update과일과채소(score) {
 
     let rankInfo;
     if (score > 80) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: '5',comment: '매우 높음' }; // 5
-    } else if (score > 75) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)', rank: '4',comment: '낮음' }; // 2
-    } else if (score > 65) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)', rank: '3',comment: '낮음' }; // 2
-    } else if (score > 60) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)', rank: '2',comment: '낮음' }; // 2
+      rankInfo = { color: 'rgba(55, 125, 69, 1)', rank: 'A',comment: '매우 풍부함' }; // 5
+   } else if (score > 60) {
+      rankInfo = { color: 'rgba(96, 186, 68, 1)', rank: 'B',comment: '부족함' }; // 2
     } else if (score > 40) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)', rank: '1',comment: '매우 낮음' }; // 1
+      rankInfo = { color: 'rgba(200, 56, 29, 1)', rank: 'E',comment: '매우 부족함' }; // 1
     } else {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)', rank: '0',comment: '매우 낮음' }; // 0
+      rankInfo = { color: 'rgba(200, 56, 29, 1)', rank: 'E',comment: '매우 부족함' }; // 0
     }
     
     // Appliquer les changements
@@ -1316,17 +1504,17 @@ function update섬유(score) {
 
     let rankInfo;
     if (score > 4.7) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '5', comment: '매우 높음' }; // 5
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '매우 높은 섬유' }; // 5
     } else if (score > 3.7) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: '4', comment: '높음' }; // 2
+      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: 'B', comment: '높은 섬유' }; // 2
     } else if (score > 2.8) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '3', comment: '보통' }; // 2
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '적당한 섬유' }; // 2
     } else if (score > 1.9) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '2', comment: '낮음' }; // 2
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '낮은 섬유' }; // 2
     } else if (score > 0.9) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '1', comment: '매우 낮음' }; // 1
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 낮은 섬유' }; // 1
     } else {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '0', comment: '매우 낮음' }; // 0
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 낮은 섬유' }; // 0
     }
     
     // Appliquer les changements
@@ -1347,17 +1535,17 @@ function update단백질(score) {
 
     let rankInfo;
     if (score > 8) {
-      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: '5', comment: '매우 높음' }; // 5
+      rankInfo = { color: 'rgba(55, 125, 69, 1)',rank: 'A', comment: '매우 높은 단백질' }; // 5
     } else if (score > 6.4) {
-      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: '4', comment: '높음' }; // 2
+      rankInfo = { color: 'rgba(96, 186, 68, 1)',rank: 'B', comment: '높은 단백질' }; // 2
     } else if (score > 4.8) {
-      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: '3', comment: '보통' }; // 2
+      rankInfo = { color: 'rgba(248, 205, 70, 1)',rank: 'C', comment: '적당한 단백질' }; // 2
     } else if (score > 3.2) {
-      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: '2', comment: '낮음' }; // 2
+      rankInfo = { color: 'rgba(226, 130, 48, 1)',rank: 'D', comment: '낮은 단백질' }; // 2
     } else if (score > 1.6) {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '1', comment: '매우 낮음' }; // 1
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 낮은 단백질' }; // 1
     } else {
-      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: '0', comment: '매우 낮음' }; // 0
+      rankInfo = { color: 'rgba(200, 56, 29, 1)',rank: 'E', comment: '매우 낮은 단백질' }; // 0
     }
     
     // Appliquer les changements
@@ -1446,6 +1634,19 @@ function update단백질(score) {
         closeSubpage();
     });
 
+    document.querySelectorAll('.alignement-elements-칼로리, .alignement-elements-포화지방, .alignement-elements-나트륨, .alignement-elements-당류, .alignement-elements-과일과채소, .alignement-elements-섬유, .alignement-elements-단백질')
+        .forEach(card => {
+            card.addEventListener('click', (event) => {
+                const nutrient = card.querySelector('.식품명').textContent;
+                const value = parseFloat(card.querySelector('span').textContent) || 0;
+                const unit = units[nutrient] || '';
+                const description = "Description pour " + nutrient; // Vous pouvez personnaliser cela
+
+                showSubpage(nutrient, value, unit, description);
+                updateScale(value, nutrient); // Mettre à jour l'échelle en fonction de la valeur
+            });
+        });
+
     // Écouteurs pour les événements de toucher
     document.addEventListener('touchstart', handleTouchStart);
     document.addEventListener('touchmove', handleTouchMove);
@@ -1458,7 +1659,7 @@ function update단백질(score) {
 
 
     const units = {
-        "열량": "kj",
+        "칼로리": "kcal",
         "당류": "g",
         "포화지방": "g",
         "나트륨": "mg",
@@ -1467,186 +1668,246 @@ function update단백질(score) {
         "단백질": "g"
     };
 
-    const descriptions = {
-    "열량": "일정한 열량 섭취는 체중 유지를 위해 필수적입니다. 그러나 많은 열량를 섭취하면 체중 증가, 과체중, 비만 및 식이 관련 만성 질환의 위험이 증가합니다.",
-    "당류": "당류를 많이 섭취하면 체중 증가와 충치를 유발할 수 있습니다. 또한 제2형 당뇨병과 심혈관 질환의 위험을 증가시킵니다.",
-    "포화지방": "포화지방을 많이 섭취하면 콜레스테롤 수치가 상승하여 심장병의 위험이 증가할 수 있습니다.",
-    "나트륨": "나트륨을 많이 섭취하면 혈압이 상승할 수 있으며, 이로 인해 심장병 및 뇌졸중의 위험이 증가할 수 있습니다.",
-    "과일과채소": "충분한 과일과 채소를 섭취하는 것은 건강하고 균형 잡힌 식단을 유지하고 전반적인 건강을 증진하는 데 매우 중요합니다. 채소와 과일이 풍부한 음식을 섭취하면 소화기암, 심혈관 질환, 비만 및 당뇨병의 위험을 줄일 수 있습니다.",
-    "섬유": "섬유질은 균형 잡힌 식단에 필수적이며, 변비를 예방하고 소화를 촉진하며 소화기암, 심혈관 질환, 비만 및 당뇨병의 위험을 줄이는 데 도움이 됩니다.",
-    "단백질": "단백질이 풍부한 식품은 일반적으로 칼슘이나 철분이 풍부하며, 이러한 미네랄은 여러 중요한 건강상의 이점을 제공합니다. 이는 강한 근육을 유지하고, 감염을 퇴치하며 회복을 돕고, 건강한 피부와 혈액을 유지하는 데 도움이 됩니다."
-};
-
     const scaleDetails = {
-        "열량": {
-            maxScale: 800,
-            labels: ['0', '670', '1340', '2010', '2680', '3350'],
-            thresholds: [0, 80, 160, 240, 320, 400, 480, 560, 640, 720, 800, 880]
-        },
+        "칼로리": {
+            maxScale: 1100,
+            labels: ['0', '240', '400', '641', '721', '801'],
+            thresholds: [0, 80, 160, 240, 320, 400, 480, 560, 640, 721, 801, 880],
+            spaceBetween: [15, 15, 15, 15,13], // Espaces en pourcentage entre les labels
+            colorOrder: "showGreenToRed" // Ajout de l'ordre des couleurs
+          },
         "나트륨": {
-            maxScale: 900,
-            labels: ['0', '180', '360', '540', '720', '900'],
-            thresholds: [90, 180, 270, 360, 450, 540, 630, 720, 810, 900, 990]
-        },
+            maxScale: 1000,
+            labels: ['0', '270', '450', '630', '810', '1000'],
+            thresholds: [90, 180, 270, 360, 450, 540, 630, 720, 810, 900, 990],
+            spaceBetween: [15, 15, 15, 15,11], // Espaces en pourcentage entre les labels
+            colorOrder: "showGreenToRed" // Ajout de l'ordre des couleurs
+          },
         "당류": {
             maxScale: 45,
             labels: ['0', '9', '18', '27', '36', '45'],
-            thresholds: [4.5, 9, 13.5, 18, 22.5, 27, 31, 36, 40, 45, 50]
-        },
+            thresholds: [4.5, 9, 13.5, 18, 22.5, 27, 31, 36, 40, 45, 50],
+            spaceBetween: [17, 18, 17, 16,15], // Espaces en pourcentage entre les labels
+            colorOrder: "showGreenToRed" // Ajout de l'ordre des couleurs
+          },
         "포화지방": {
-            maxScale: 10,
-            labels: ['0', '2', '4', '6', '8', '10'],
-            thresholds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+            maxScale: 12,
+            labels: ['0', '3', '5', '7', '9', '11'],
+            thresholds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+            spaceBetween: [17, 18, 19, 18, 16], // Espaces en pourcentage entre les labels
+            colorOrder: "showGreenToRed" // Ajout de l'ordre des couleurs
         },
         "과일과채소": {
-            maxScale: 90,
-            labels: ['0', '18', '36', '54', '72', '90'],
-            thresholds: [40, 60, 80]
-        },
+            maxScale: 100,
+            labels: ['0', '60', '80', '100'],
+            thresholds: [40, 60, 80],
+            spaceBetween: [30, 30, 26], // Espaces en pourcentage entre les labels
+            colorOrder: "showRedToGreenFruits" // Ajout de l'ordre des couleurs
+          },
         "섬유": {
-            maxScale: 3.5,
-            labels: ['0', '0.9', '1.9', '2.8', '3.7', '4.7'],
-            thresholds: [0.7, 1.4, 2.1, 2.8, 3.5, 4.2]
-        },
+            maxScale: 6,
+            labels: ['0', '1.9', '2.8', '3.7', '4.7', '6'],
+            thresholds: [0.7, 1.4, 2.1, 2.8, 3.5, 4.2],
+            spaceBetween: [16, 16, 16, 16, 16], // Espaces en pourcentage entre les labels
+            colorOrder: "showRedToGreen" // Ajout de l'ordre des couleurs
+          },
         "단백질": {
-            maxScale: 8,
-            labels: ['0', '1.6', '3.2', '4.8', '6.4', '8'],
-            thresholds: [1.6, 3.2, 4.8, 6.4, 8, 9.6]
-        }
+            maxScale: 10,
+            labels: ['0', '3.2', '4.8', '6.4', '8', '10'],
+            thresholds: [1.6, 3.2, 4.8, 6.4, 8, 9.6],
+            spaceBetween: [16, 16, 16, 16, 16], // Espaces en pourcentage entre les labels
+            colorOrder: "showRedToGreen" // Ajout de l'ordre des couleurs
+          }
     };
+
+    
+function showGreenToRed() {
+    document.getElementById("progressContainer").innerHTML = `
+        <div class="progress-bar">
+            <div class="section dark-green"></div>
+            <div class="section green"></div>
+            <div class="section yellow"></div>
+            <div class="section orange"></div>
+            <div class="section red"></div>
+        </div>
+    `;
+}
+
+function showRedToGreen() {
+    document.getElementById("progressContainer").innerHTML = `
+        <div class="progress-bar">
+            <div class="section red"></div>
+            <div class="section orange"></div>
+            <div class="section yellow"></div>
+            <div class="section green"></div>
+            <div class="section dark-green"></div>
+        </div>
+    `;
+}
+
+function showRedToGreenFruits() {
+    document.getElementById("progressContainer").innerHTML = `
+        <div class="progress-bar">
+            <div class="section red"></div>
+            <div class="section orange"></div>
+            <div class="section dark-green"></div>
+        </div>
+    `;
+}
 
     function updateScale(value, nutrient) {
     const scaleDetail = scaleDetails[nutrient] || {};
     const maxScale = scaleDetail.maxScale || 800;
     const labels = scaleDetail.labels || ['0', '160', '320', '480', '640', '800'];
+    const spaceBetween = scaleDetail.spaceBetween || [20, 20, 20, 20]; // Valeurs par défaut si `spaceBetween` n'est pas défini
 
-    const scaleBar = document.querySelector('.scale-bar');
-    const filledBar = document.querySelector('.filled-bar');
-    const scaleWidth = scaleBar.offsetWidth;
+    const scaleWidth = document.querySelector('.scale-bar').offsetWidth;
 
     const limitedValue = Math.min(value, maxScale);
     let fillPercentage = (limitedValue / maxScale) * 100;
+
+// Met à jour la position de la flèche
+const arrow = document.querySelector('.arrow-up');
+const arrowPosition = (fillPercentage / 100) * scaleWidth; 
+arrow.style.left = `${arrowPosition - 6}px`; // -6px pour centrer la flèche par rapport à son triangle
+
+
+    // Vérification de l'ordre des couleurs
+    if (scaleDetail.colorOrder === "showGreenToRed") {
+        showGreenToRed();  // Appel de la fonction pour afficher les couleurs de vert à rouge
+    } else if (scaleDetail.colorOrder === "showRedToGreen") {
+        showRedToGreen();  // Appel de la fonction pour afficher les couleurs de rouge à vert
+    } else if (scaleDetail.colorOrder === "showRedToGreenFruits") {
+      showRedToGreenFruits();  // Appel de la fonction pour afficher les couleurs de rouge à vert
+    }
+
 
    // Valeurs par défaut globales
     let fillColor = 'grey'; // Default color
     let level = '0'; // Default level
     let comment = ''; // Default comment
+    let description = '';
 
     // Définir des valeurs par défaut spécifiques pour certains nutriments
-    if (nutrient === "열량") {
-        fillColor = 'rgba(200, 56, 29, 1)'; // Couleur par défaut pour 열량
-        level = '10'; // Niveau par défaut pour 열량
-        comment = '매우 높음'; // Commentaire par défaut pour 열량
+    if (nutrient === "칼로리") {
+        fillColor = 'rgba(200, 56, 29, 1)'; // Couleur par défaut pour 칼로리
+        level = 'E'; // Niveau par défaut pour 칼로리
+        comment = '매우 높은 칼로리'; // Commentaire par défaut pour 칼로리
+        description ='100g당 801kcal 이상의 과도한 열량 섭취는 비만과 체중 증가로 이어지며, 심각한 건강 문제를 초래할 수 있습니다. 하루 2,000kcal와 100g당 80kcal로 섭취량을 줄이는 것이 건강한 체중을 유지하고 만성 질환의 위험을 줄이는 데 필수적입니다. 고열량 식품을 녹색 채소나 신선한 과일과 같은 저열량 대체 식품으로 교체하세요.';
       } else if (nutrient === "나트륨") {
-        fillColor = 'rgba(200, 56, 29, 1)'; // Couleur par défaut pour 열량
-        level = '10'; // Niveau par défaut pour 열량
-        comment = '매우 높음'; // Commentaire par défaut pour 열량
+        fillColor = 'rgba(200, 56, 29, 1)'; // Couleur par défaut pour 칼로리
+        level = 'E'; // Niveau par défaut pour 칼로리
+        comment = '매우 짬'; // Commentaire par défaut pour 칼로리
+        description ='하루 3,500mg 미만의 나트륨 섭취는 고혈압을 예방하고 심혈관 질환의 위험을 줄이는 데 이상적입니다. 이 제품처럼 100g당 90mg 이하로 나트륨 섭취를 줄이는 것이 좋습니다. 소금이 첨가되지 않은 음식이나 저염식 빵을 선택하세요.';
       } else if (nutrient === "당류") {
-        fillColor = 'rgba(200, 56, 29, 1)'; // Couleur par défaut pour 열량
-        level = '10'; // Niveau par défaut pour 열량
-        comment = '매우 높음'; // Commentaire par défaut pour 열량
+        fillColor = 'rgba(200, 56, 29, 1)'; // Couleur par défaut pour 칼로리
+        level = 'E'; // Niveau par défaut pour 칼로리
+        comment = '매우 달음'; // Commentaire par défaut pour 칼로리
+        description ='하루 25g 미만의 매우 적은 설탕 섭취는 건강한 체중을 유지하고 대사 질환의 위험을 줄이는 데 이상적입니다. 첨가된 설탕을 제한하여 전반적인 건강을 개선하는 것이 좋습니다. 설탕이 들어간 간식이나 주스 대신 통과일을 섭취하세요.';
       } else if (nutrient === "포화지방") {
-        fillColor = 'rgba(200, 56, 29, 1)'; // Couleur par défaut pour 열량
-        level = '10'; // Niveau par défaut pour 열량
-        comment = '매우 높음'; // Commentaire par défaut pour 열량
+        fillColor = 'rgba(200, 56, 29, 1)'; // Couleur par défaut pour 칼로리
+        level = 'E'; // Niveau par défaut pour 칼로리
+        comment = '매우 낮은 포화지방'; // Commentaire par défaut pour 칼로리
+        description ='하루 15g 미만 및 100g당 1g 이하의 매우 낮은 포화지방 섭취는 심장병 위험을 최소화하는 데 이상적입니다. 불포화 지방, 특히 올리브 오일과 같은 건강한 지방을 섭취하는 것이 좋습니다. 고등어, 연어와 같은 등푸른 생선과 견과류를 통해 불포화 지방을 더 많이 섭취하세요.';
       } else if (nutrient === "과일과채소") {
         fillColor = 'rgba(55, 125, 69, 1)'; // Couleur par défaut pour 나트륨
-        level = '5'; // Niveau par défaut pour 나트륨
-        comment = '매우 낮음'; // Commentaire par défaut pour 나트륨
+        level = 'A'; // Niveau par défaut pour 나트륨
+        comment = '매우 풍부함'; // Commentaire par défaut pour 나트륨
+        description = '과일과 채소는 비타민, 미네랄 및 섬유소를 제공하여 건강에 필수적입니다. 심장병 및 일부 암과 같은 만성 질환의 위험을 줄이는 데 도움이 됩니다. 매일 400g의 과일과 채소를 섭취하면 체중을 유지하고 면역 체계를 강화하는 데 도움이 됩니다. 이 제품은 100g당 80%의 권장량을 포함하고 있습니다. 시금치, 당근, 사과, 블루베리와 같은 다양한 신선한 과일과 채소를 섭취하세요.'
       } else if (nutrient === "섬유") {
         fillColor = 'rgba(55, 125, 69, 1)'; // Couleur par défaut pour 나트륨
-        level = '5'; // Niveau par défaut pour 나트륨
-        comment = '매우 낮음'; // Commentaire par défaut pour 나트륨
+        level = 'A'; // Niveau par défaut pour 나트륨
+        comment = '매우 높은 섬유'; // Commentaire par défaut pour 나트륨
+        description ='섬유질은 소화 건강을 촉진하고 심장병을 예방하는 데 중요한 역할을 합니다. 규칙적으로 섭취하면 소화기 건강을 개선하고 콜레스테롤 수치를 조절하는 데 도움이 됩니다. 이 제품은 100g당 4.7g의 권장 섬유질을 포함하고 있으며, 하루에 최대 25g을 섭취하는 것이 좋습니다. 귀리, 강낭콩, 렌틸콩과 같은 고섬유질 식품을 식단에 포함시키세요.'
     } else if (nutrient === "단백질") {
         fillColor = 'rgba(55, 125, 69, 1)'; // Couleur par défaut pour 나트륨
-        level = '5'; // Niveau par défaut pour 나트륨
-        comment = '매우 낮음'; // Commentaire par défaut pour 나트륨
+        level = 'A'; // Niveau par défaut pour 나트륨
+        comment = '매우 높은 단백질'; // Commentaire par défaut pour 나트륨
+        description ='단백질은 근육 회복과 건설뿐만 아니라 신체 조직의 건강 유지에 필수적입니다. 근육량을 유지하고 신진대사를 조절하는 데 도움이 됩니다. 신체 요구를 충족하기 위해 충분한 양의 단백질을 섭취하는 것이 좋으며, 100g당 약 8g(하루 60g)을 섭취해야 합니다. 닭고기, 생선, 달걀과 같은 저지방 단백질을 섭취하여 일일 단백질 섭취량을 유지하세요.'
     } 
     // Ajouter d'autres conditions pour d'autres nutriments si nécessaire
 
     const segments = (function() {
-        if (nutrient === "열량") {
+        if (nutrient === "칼로리") {
             return [
-                { threshold: 335, color: 'rgba(55, 125, 69, 1)', level: '0', comment: '매우 낮음' },
-                { threshold: 670, color: 'rgba(55, 125, 69, 1)', level: '1', comment: '매우 낮음' },
-                { threshold: 1005, color: 'rgba(55, 125, 69, 1)', level: '2', comment: '매우 낮음' },
-                { threshold: 1340, color: 'rgba(96, 186, 68, 1)', level: '3', comment: '낮음' },
-                { threshold: 1675, color: 'rgba(96, 186, 68, 1)', level: '4', comment: '낮음' },
-                { threshold: 2010, color: 'rgba(248, 205, 70, 1)', level: '5', comment: '보통' },
-                { threshold: 2345, color: 'rgba(248, 205, 70, 1)', level: '6', comment: '보통' },
-                { threshold: 2680, color: 'rgba(226, 130, 48, 1)', level: '7', comment: '높음' },
-                { threshold: 3015, color: 'rgba(226, 130, 48, 1)', level: '8', comment: '높음' },
-                { threshold: 3350, color: 'rgba(200, 56, 29, 1)', level: '9', comment: '매우 높음' },
-                { threshold: 3685, color: 'rgba(200, 56, 29, 1)', level: '10', comment: '매우 높음' }
+                { threshold: 80, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 낮은 칼로리', description:'열량은 신체 기능을 유지하고 건강을 유지하는 데 필수적인 에너지원입니다. 적절한 열량 섭취는 최적의 체중을 유지하고 에너지 결핍을 방지하는 데 도움이 됩니다. 성인 기준으로 하루 약 2,000kcal의 섭취가 권장됩니다. 이 제품은 100g당 80kcal로, 건강한 식단을 위해 이상적인 낮은 열량을 포함하고 있습니다. 저열량 식품인 채소, 과일, 저지방 단백질을 우선적으로 섭취하세요.' },
+                { threshold: 160, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 낮은 칼로리', description:'열량은 신체 기능을 유지하고 건강을 유지하는 데 필수적인 에너지원입니다. 적절한 열량 섭취는 최적의 체중을 유지하고 에너지 결핍을 방지하는 데 도움이 됩니다. 성인 기준으로 하루 약 2,000kcal의 섭취가 권장됩니다. 이 제품은 100g당 80kcal로, 건강한 식단을 위해 이상적인 낮은 열량을 포함하고 있습니다. 저열량 식품인 채소, 과일, 저지방 단백질을 우선적으로 섭취하세요.' },
+                { threshold: 240, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 낮은 칼로리', description:'열량은 신체 기능을 유지하고 건강을 유지하는 데 필수적인 에너지원입니다. 적절한 열량 섭취는 최적의 체중을 유지하고 에너지 결핍을 방지하는 데 도움이 됩니다. 성인 기준으로 하루 약 2,000kcal의 섭취가 권장됩니다. 이 제품은 100g당 80kcal로, 건강한 식단을 위해 이상적인 낮은 열량을 포함하고 있습니다. 저열량 식품인 채소, 과일, 저지방 단백질을 우선적으로 섭취하세요.' },
+                { threshold: 320, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '낮은 칼로리', description: '100g당 320~400kcal 정도의 중간 수준의 열량 섭취는 일일 에너지 요구량을 충족시키는 데 도움을 줄 수 있지만, 체중 증가를 방지하기 위해 섭취량을 주의 깊게 관리하는 것이 좋습니다. 하루 2,000kcal를 목표로 하며, 100g당 약 80kcal 섭취가 적절합니다. 견과류나 곡류와 같은 고에너지 식품은 적정량 섭취하는 것이 좋습니다.'},
+                { threshold: 400, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '낮은 칼로리', description:'100g당 320~400kcal 정도의 중간 수준의 열량 섭취는 일일 에너지 요구량을 충족시키는 데 도움을 줄 수 있지만, 체중 증가를 방지하기 위해 섭취량을 주의 깊게 관리하는 것이 좋습니다. 하루 2,000kcal를 목표로 하며, 100g당 약 80kcal 섭취가 적절합니다. 견과류나 곡류와 같은 고에너지 식품은 적정량 섭취하는 것이 좋습니다.' },
+                { threshold: 480, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '적당함', description:'100g당 480~560kcal의 적당한 열량 섭취는 에너지 요구를 충족시킬 수 있지만, 규칙적인 신체 활동과 균형을 맞추는 것이 중요합니다. 과도한 열량 섭취를 피하기 위해 소량씩 섭취하는 것이 좋으며, 100g당 80kcal와 하루 2,000kcal를 유지하는 것이 좋습니다. 탄수화물이나 고지방 단백질의 섭취량을 제한하세요.' },
+                { threshold: 560, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '적당함', description:'100g당 480~560kcal의 적당한 열량 섭취는 에너지 요구를 충족시킬 수 있지만, 규칙적인 신체 활동과 균형을 맞추는 것이 중요합니다. 과도한 열량 섭취를 피하기 위해 소량씩 섭취하는 것이 좋으며, 100g당 80kcal와 하루 2,000kcal를 유지하는 것이 좋습니다. 탄수화물이나 고지방 단백질의 섭취량을 제한하세요.'},
+                { threshold: 641, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '높은 칼로리', description:'100g당 641kcal 이상의 고열량 섭취는 원하지 않는 체중 증가를 초래할 수 있으며, 당뇨병 및 심장병과 같은 대사 질환의 위험을 증가시킬 수 있습니다. 하루 2,000kcal와 100g당 80kcal로 섭취량을 제한하고, 저에너지 식품을 우선적으로 섭취하는 것이 중요합니다. 가공 스낵과 당이 많은 음료와 같은 고열량 음식을 줄이세요.' },
+                { threshold: 721, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '높은 칼로리', description:'100g당 641kcal 이상의 고열량 섭취는 원하지 않는 체중 증가를 초래할 수 있으며, 당뇨병 및 심장병과 같은 대사 질환의 위험을 증가시킬 수 있습니다. 하루 2,000kcal와 100g당 80kcal로 섭취량을 제한하고, 저에너지 식품을 우선적으로 섭취하는 것이 중요합니다. 가공 스낵과 당이 많은 음료와 같은 고열량 음식을 줄이세요.' },
+                { threshold: 801, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 높은 칼로리', description:'100g당 801kcal 이상의 과도한 열량 섭취는 비만과 체중 증가로 이어지며, 심각한 건강 문제를 초래할 수 있습니다. 하루 2,000kcal와 100g당 80kcal로 섭취량을 줄이는 것이 건강한 체중을 유지하고 만성 질환의 위험을 줄이는 데 필수적입니다. 고열량 식품을 녹색 채소나 신선한 과일과 같은 저열량 대체 식품으로 교체하세요.' },
+                { threshold: 881, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 높은 칼로리', description:'100g당 801kcal 이상의 과도한 열량 섭취는 비만과 체중 증가로 이어지며, 심각한 건강 문제를 초래할 수 있습니다. 하루 2,000kcal와 100g당 80kcal로 섭취량을 줄이는 것이 건강한 체중을 유지하고 만성 질환의 위험을 줄이는 데 필수적입니다. 고열량 식품을 녹색 채소나 신선한 과일과 같은 저열량 대체 식품으로 교체하세요.' }
             ];
         } else if (nutrient === "나트륨") {
             return [
-                { threshold: 90, color: 'rgba(55, 125, 69, 1)', level: '0', comment: '매우 낮음' },
-                { threshold: 180, color: 'rgba(55, 125, 69, 1)', level: '1', comment: '매우 낮음' },
-                { threshold: 270, color: 'rgba(55, 125, 69, 1)', level: '2', comment: '매우 낮음' },
-                { threshold: 360, color: 'rgba(96, 186, 68, 1)', level: '3', comment: '낮음' },
-                { threshold: 450, color: 'rgba(96, 186, 68, 1)', level: '4', comment: '낮음' },
-                { threshold: 540, color: 'rgba(248, 205, 70, 1)', level: '5', comment: '보통' },
-                { threshold: 630, color: 'rgba(248, 205, 70, 1)', level: '6', comment: '보통' },
-                { threshold: 720, color: 'rgba(226, 130, 48, 1)', level: '7', comment: '높음' },
-                { threshold: 810, color: 'rgba(226, 130, 48, 1)', level: '8', comment: '높음' },
-                { threshold: 900, color: 'rgba(200, 56, 29, 1)', level: '9', comment: '매우 높음' },
-                { threshold: 990, color: 'rgba(200, 56, 29, 1)', level: '10', comment: '매우 높음' }
+                { threshold: 90, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '전혀 짜지 않음', description:'나트륨은 혈압 조절에 필요한 미네랄이지만, 과도한 섭취는 고혈압과 심혈관 질환을 유발할 수 있습니다. 하루 3,500mg 이상의 나트륨을 섭취하면 건강에 해로울 수 있습니다. 100g당 90mg 미만으로 섭취를 제한하는 것이 좋습니다. 감자칩, 가공육, 즉석식품과 같은 가공식품과 짠 음식을 줄이세요.' },
+                { threshold: 180, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '전혀 짜지 않음', description:'나트륨은 혈압 조절에 필요한 미네랄이지만, 과도한 섭취는 고혈압과 심혈관 질환을 유발할 수 있습니다. 하루 3,500mg 이상의 나트륨을 섭취하면 건강에 해로울 수 있습니다. 100g당 90mg 미만으로 섭취를 제한하는 것이 좋습니다. 감자칩, 가공육, 즉석식품과 같은 가공식품과 짠 음식을 줄이세요.' },
+                { threshold: 270, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '전혀 짜지 않음', description:'나트륨은 혈압 조절에 필요한 미네랄이지만, 과도한 섭취는 고혈압과 심혈관 질환을 유발할 수 있습니다. 하루 3,500mg 이상의 나트륨을 섭취하면 건강에 해로울 수 있습니다. 100g당 90mg 미만으로 섭취를 제한하는 것이 좋습니다. 감자칩, 가공육, 즉석식품과 같은 가공식품과 짠 음식을 줄이세요.' },
+                { threshold: 360, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '짜지 않음', description:'나트륨을 과다 섭취하면 고혈압을 유발하고 심혈관 건강에 악영향을 미칠 수 있습니다. 하루 3,500mg 미만으로 섭취를 제한하는 것이 중요합니다. 100g당 90mg 미만으로 섭취를 제한하는 것이 좋습니다. 소금 대신 허브나 향신료로 요리에 풍미를 더해보세요.' },
+                { threshold: 450, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '짜지 않음', description:'나트륨을 과다 섭취하면 고혈압을 유발하고 심혈관 건강에 악영향을 미칠 수 있습니다. 하루 3,500mg 미만으로 섭취를 제한하는 것이 중요합니다. 100g당 90mg 미만으로 섭취를 제한하는 것이 좋습니다. 소금 대신 허브나 향신료로 요리에 풍미를 더해보세요.' },
+                { threshold: 540, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '적당함', description:'나트륨을 적당히 섭취하는 것은 괜찮지만, 장기적인 심혈관 건강을 위해 섭취량을 줄이는 것이 좋습니다. 하루 3,500mg 미만의 나트륨 섭취와 100g당 90mg 이하로 제한하는 것이 좋습니다. 신선한 야채, 과일, 가공되지 않은 고기와 같은 저나트륨 식품을 선택하세요.' },
+                { threshold: 630, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '적당함', description:'나트륨을 적당히 섭취하는 것은 괜찮지만, 장기적인 심혈관 건강을 위해 섭취량을 줄이는 것이 좋습니다. 하루 3,500mg 미만의 나트륨 섭취와 100g당 90mg 이하로 제한하는 것이 좋습니다. 신선한 야채, 과일, 가공되지 않은 고기와 같은 저나트륨 식품을 선택하세요.' },
+                { threshold: 720, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '짬', description:'하루 3,500mg 이하로 나트륨 섭취를 제한하면 혈압 조절에 도움을 줄 수 있으며, 심혈관 질환의 위험을 증가시키지 않습니다. 100g당 90mg 미만으로 섭취를 제한하는 것이 좋습니다. 소금 대신 레몬이나 식초를 사용하여 나트륨을 줄이세요.' },
+                { threshold: 810, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '짬', description:'하루 3,500mg 이하로 나트륨 섭취를 제한하면 혈압 조절에 도움을 줄 수 있으며, 심혈관 질환의 위험을 증가시키지 않습니다. 100g당 90mg 미만으로 섭취를 제한하는 것이 좋습니다. 소금 대신 레몬이나 식초를 사용하여 나트륨을 줄이세요.' },
+                { threshold: 900, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 짬', description:'하루 3,500mg 미만의 나트륨 섭취는 고혈압을 예방하고 심혈관 질환의 위험을 줄이는 데 이상적입니다. 이 제품처럼 100g당 90mg 이하로 나트륨 섭취를 줄이는 것이 좋습니다. 소금이 첨가되지 않은 음식이나 저염식 빵을 선택하세요.' },
+                { threshold: 990, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 짬', description:'하루 3,500mg 미만의 나트륨 섭취는 고혈압을 예방하고 심혈관 질환의 위험을 줄이는 데 이상적입니다. 이 제품처럼 100g당 90mg 이하로 나트륨 섭취를 줄이는 것이 좋습니다. 소금이 첨가되지 않은 음식이나 저염식 빵을 선택하세요.' }
             ];
         } else if (nutrient === "당류") {
             return [
-                { threshold: 4.5, color: 'rgba(55, 125, 69, 1)', level: '0', comment: '매우 낮음' },
-                { threshold: 9, color: 'rgba(55, 125, 69, 1)', level: '1', comment: '매우 낮음' },
-                { threshold: 13.5, color: 'rgba(55, 125, 69, 1)', level: '2', comment: '매우 낮음' },
-                { threshold: 18, color: 'rgba(96, 186, 68, 1)', level: '3', comment: '낮음' },
-                { threshold: 22.5, color: 'rgba(96, 186, 68, 1)', level: '4', comment: '낮음' },
-                { threshold: 27, color: 'rgba(248, 205, 70, 1)', level: '5', comment: '보통' },
-                { threshold: 31, color: 'rgba(248, 205, 70, 1)', level: '6', comment: '보통' },
-                { threshold: 36, color: 'rgba(226, 130, 48, 1)', level: '7', comment: '높음' },
-                { threshold: 40, color: 'rgba(226, 130, 48, 1)', level: '8', comment: '높음' },
-                { threshold: 45, color: 'rgba(200, 56, 29, 1)', level: '9', comment: '매우 높음' },
-                { threshold: 50, color: 'rgba(200, 56, 29, 1)', level: '10', comment: '매우 높음' }
+                { threshold: 4.5, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 달지 않음', description:'첨가된 설탕은 빠른 체중 증가, 충치 및 제2형 당뇨병의 위험을 높일 수 있습니다. 하루 25g 이상의 설탕 섭취는 이러한 위험을 증가시킵니다. 설탕 섭취를 100g당 4.5g 미만으로 줄이는 것이 중요합니다. 설탕이 들어간 음료 대신 물이나 무가당 차를 선택하세요.' },
+                { threshold: 9, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 달지 않음', description:'첨가된 설탕은 빠른 체중 증가, 충치 및 제2형 당뇨병의 위험을 높일 수 있습니다. 하루 25g 이상의 설탕 섭취는 이러한 위험을 증가시킵니다. 설탕 섭취를 100g당 4.5g 미만으로 줄이는 것이 중요합니다. 설탕이 들어간 음료 대신 물이나 무가당 차를 선택하세요.' },
+                { threshold: 13.5, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 달지 않음', description:'첨가된 설탕은 빠른 체중 증가, 충치 및 제2형 당뇨병의 위험을 높일 수 있습니다. 하루 25g 이상의 설탕 섭취는 이러한 위험을 증가시킵니다. 설탕 섭취를 100g당 4.5g 미만으로 줄이는 것이 중요합니다. 설탕이 들어간 음료 대신 물이나 무가당 차를 선택하세요.' },
+                { threshold: 18, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '달지 않음', description:' 하루 40g에서 50g 사이의 설탕 섭취는 여전히 높으며, 당뇨병 및 대사 질환의 위험을 증가시킬 수 있습니다. 설탕 섭취를 하루 25g과 100g당 4.5g으로 줄이는 것이 좋습니다. 달콤한 디저트 대신 신선한 과일이나 플레인 요거트를 섭취하세요.' },
+                { threshold: 22.5, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '달지 않음', description:' 하루 40g에서 50g 사이의 설탕 섭취는 여전히 높으며, 당뇨병 및 대사 질환의 위험을 증가시킬 수 있습니다. 설탕 섭취를 하루 25g과 100g당 4.5g으로 줄이는 것이 좋습니다. 달콤한 디저트 대신 신선한 과일이나 플레인 요거트를 섭취하세요.' },
+                { threshold: 27, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '보통', description:'적당한 양의 설탕 섭취는 허용되지만, 장기적인 건강 문제를 예방하려면 섭취량을 줄이는 것이 좋습니다. 하루 25g과 100g당 4.5g으로 섭취를 줄이는 것이 좋습니다. 집에서 요리를 할 때 설탕을 덜 사용하고 꿀이나 계피 같은 대체제를 사용해보세요.' },
+                { threshold: 31, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '보통', description:'적당한 양의 설탕 섭취는 허용되지만, 장기적인 건강 문제를 예방하려면 섭취량을 줄이는 것이 좋습니다. 하루 25g과 100g당 4.5g으로 섭취를 줄이는 것이 좋습니다. 집에서 요리를 할 때 설탕을 덜 사용하고 꿀이나 계피 같은 대체제를 사용해보세요.' },
+                { threshold: 36, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '달음', description:'하루 25g 미만의 낮은 설탕 섭취는 충치 및 당뇨병과 같은 과다한 설탕 섭취로 인한 위험을 예방하는 데 도움이 됩니다. 100g당 4.5g 이하로 섭취를 줄이는 것이 가장 좋습니다. 숨은 설탕이 들어 있는 가공 식품(예: 소스, 시리얼바)을 피하세요.' },
+                { threshold: 40, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '달음', description:'하루 25g 미만의 낮은 설탕 섭취는 충치 및 당뇨병과 같은 과다한 설탕 섭취로 인한 위험을 예방하는 데 도움이 됩니다. 100g당 4.5g 이하로 섭취를 줄이는 것이 가장 좋습니다. 숨은 설탕이 들어 있는 가공 식품(예: 소스, 시리얼바)을 피하세요.' },
+                { threshold: 45, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 달음', description:'하루 25g 미만의 매우 적은 설탕 섭취는 건강한 체중을 유지하고 대사 질환의 위험을 줄이는 데 이상적입니다. 첨가된 설탕을 제한하여 전반적인 건강을 개선하는 것이 좋습니다. 설탕이 들어간 간식이나 주스 대신 통과일을 섭취하세요.' },
+                { threshold: 50, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 달음', description:'하루 25g 미만의 매우 적은 설탕 섭취는 건강한 체중을 유지하고 대사 질환의 위험을 줄이는 데 이상적입니다. 첨가된 설탕을 제한하여 전반적인 건강을 개선하는 것이 좋습니다. 설탕이 들어간 간식이나 주스 대신 통과일을 섭취하세요.' }
             ];
         } else if (nutrient === "포화지방") {
             return [
-                { threshold: 1, color: 'rgba(55, 125, 69, 1)', level: '0', comment: '매우 낮음' },
-                { threshold: 2, color: 'rgba(55, 125, 69, 1)', level: '1', comment: '매우 낮음' },
-                { threshold: 3, color: 'rgba(55, 125, 69, 1)', level: '2', comment: '매우낮음' },
-                { threshold: 4, color: 'rgba(96, 186, 68, 1)', level: '3', comment: '낮음' },
-                { threshold: 5, color: 'rgba(96, 186, 68, 1)', level: '4', comment: '낮음' },
-                { threshold: 6, color: 'rgba(248, 205, 70, 1)', level: '5', comment: '보통' },
-                { threshold: 7, color: 'rgba(248, 205, 70, 1)', level: '6', comment: '보통' },
-                { threshold: 8, color: 'rgba(226, 130, 48, 1)', level: '7', comment: '높음' },
-                { threshold: 9, color: 'rgba(226, 130, 48, 1)', level: '8', comment: '높음' },
-                { threshold: 10, color: 'rgba(200, 56, 29, 1)', level: '9', comment: '매우 높음' },
-                { threshold: 11, color: 'rgba(200, 56, 29, 1)', level: '10', comment: '매우 높음' }
+                { threshold: 1, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 높은 포화지방', description:'포화지방은 콜레스테롤 수치를 높이고 심장병 위험을 증가시키는 것으로 알려져 있습니다. 하루 15g 이상의 섭취는 심혈관 건강에 큰 해를 끼칠 수 있습니다. 100g당 1g 미만으로 섭취를 줄이는 것이 좋습니다. 지방이 많은 치즈, 크림, 가공육과 같은 고지방 음식을 줄이세요.' },
+                { threshold: 2, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 높은 포화지방', description:'포화지방은 콜레스테롤 수치를 높이고 심장병 위험을 증가시키는 것으로 알려져 있습니다. 하루 15g 이상의 섭취는 심혈관 건강에 큰 해를 끼칠 수 있습니다. 100g당 1g 미만으로 섭취를 줄이는 것이 좋습니다. 지방이 많은 치즈, 크림, 가공육과 같은 고지방 음식을 줄이세요.' },
+                { threshold: 3, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 높은 포화지방', description:'포화지방은 콜레스테롤 수치를 높이고 심장병 위험을 증가시키는 것으로 알려져 있습니다. 하루 15g 이상의 섭취는 심혈관 건강에 큰 해를 끼칠 수 있습니다. 100g당 1g 미만으로 섭취를 줄이는 것이 좋습니다. 지방이 많은 치즈, 크림, 가공육과 같은 고지방 음식을 줄이세요.' },
+                { threshold: 4, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '높은 포화지방', description:'하루 15g에서 20g의 포화지방 섭취는 여전히 과도하며, 심장 건강에 부정적인 영향을 미칠 수 있습니다. 100g당 1g 이하로 섭취를 제한하는 것이 좋습니다. 아보카도, 아몬드, 올리브 오일과 같은 건강한 지방을 선택하세요.' },
+                { threshold: 5, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '높은 포화지방', description:'하루 15g에서 20g의 포화지방 섭취는 여전히 과도하며, 심장 건강에 부정적인 영향을 미칠 수 있습니다. 100g당 1g 이하로 섭취를 제한하는 것이 좋습니다. 아보카도, 아몬드, 올리브 오일과 같은 건강한 지방을 선택하세요.' },
+                { threshold: 6, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '적당한 포화지방', description:'적당한 포화지방 섭취는 허용되지만, 심장 건강을 보호하기 위해 이 양을 줄이는 것이 항상 좋습니다. 하루 15g 미만과 100g당 1g 이하의 섭취를 목표로 하는 것이 좋습니다. 버터 대신 올리브 오일이나 카놀라유로 교체하여 포화지방을 줄이세요.' },
+                { threshold: 7, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '적당한 포화지방', description:'적당한 포화지방 섭취는 허용되지만, 심장 건강을 보호하기 위해 이 양을 줄이는 것이 항상 좋습니다. 하루 15g 미만과 100g당 1g 이하의 섭취를 목표로 하는 것이 좋습니다. 버터 대신 올리브 오일이나 카놀라유로 교체하여 포화지방을 줄이세요.' },
+                { threshold: 8, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '낮은 포화지방', description:'하루 15g 미만의 포화지방 섭취와 100g당 1g 이하의 섭취는 콜레스테롤 수치를 낮추고 심장 건강을 향상시키는 데 도움이 됩니다. 껍질 없는 닭고기나 생선과 같은 저지방 육류를 선택하여 포화지방 섭취를 제한하세요.' },
+                { threshold: 9, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '낮은 포화지방', description:'하루 15g 미만의 포화지방 섭취와 100g당 1g 이하의 섭취는 콜레스테롤 수치를 낮추고 심장 건강을 향상시키는 데 도움이 됩니다. 껍질 없는 닭고기나 생선과 같은 저지방 육류를 선택하여 포화지방 섭취를 제한하세요.' },
+                { threshold: 10, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 낮은 포화지방', description:'하루 15g 미만 및 100g당 1g 이하의 매우 낮은 포화지방 섭취는 심장병 위험을 최소화하는 데 이상적입니다. 불포화 지방, 특히 올리브 오일과 같은 건강한 지방을 섭취하는 것이 좋습니다. 고등어, 연어와 같은 등푸른 생선과 견과류를 통해 불포화 지방을 더 많이 섭취하세요.' },
+                { threshold: 11, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 낮은 포화지방', description:'하루 15g 미만 및 100g당 1g 이하의 매우 낮은 포화지방 섭취는 심장병 위험을 최소화하는 데 이상적입니다. 불포화 지방, 특히 올리브 오일과 같은 건강한 지방을 섭취하는 것이 좋습니다. 고등어, 연어와 같은 등푸른 생선과 견과류를 통해 불포화 지방을 더 많이 섭취하세요.' }
             ];
         } else if (nutrient === "과일과채소") {
             return [
-                { threshold: 40, color: 'rgba(200, 56, 29, 1)', level: '0', comment: '매우 낮음' },
-                { threshold: 60, color: 'rgba(200, 56, 29, 1)', level: '1', comment: '매우 낮음' },
-                { threshold: 65, color: 'rgba(226, 130, 48, 1)', level: '2', comment: '낮음' },
-                { threshold: 75, color: 'rgba(248, 205, 70, 1)', level: '3', comment: '보통' },
-                { threshold: 80, color: 'rgba(96, 186, 68, 1)', level: '4', comment: '높음' },
-                { threshold: 100, color: 'rgba(55, 125, 69, 1)', level: '5', comment: '매우 높음' }
+                { threshold: 40, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 부족함', description:'하루 100g 미만의 매우 적은 과일과 채소 섭취는 비타민 및 미네랄 결핍을 초래하여 질병 위험을 증가시킵니다. 전반적인 건강이 저하될 수 있으므로 다양한 과일과 채소를 식단에 다시 포함시키는 것이 필요합니다. 야채 주스나 과일 샐러드를 식단에 포함시키세요.' },
+                { threshold: 60, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 부족함', description:'하루 100g 미만의 매우 적은 과일과 채소 섭취는 비타민 및 미네랄 결핍을 초래하여 질병 위험을 증가시킵니다. 전반적인 건강이 저하될 수 있으므로 다양한 과일과 채소를 식단에 다시 포함시키는 것이 필요합니다. 야채 주스나 과일 샐러드를 식단에 포함시키세요.' },
+                { threshold: 80, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '풍부함', description:'하루 400g 이하의 과일과 채소 섭취도 여전히 건강에 유익하지만, 이 양을 늘리면 질병 예방 효과가 더 좋아질 수 있습니다. 100g당 90% (또는 하루 약 350g)를 섭취하는 것이 좋습니다. 브로콜리나 애호박과 같은 녹색 채소를 더 많이 포함시키세요.' },
+                { threshold: 100, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 풍부함', description:'과일과 채소는 비타민, 미네랄 및 섬유소를 제공하여 건강에 필수적입니다. 심장병 및 일부 암과 같은 만성 질환의 위험을 줄이는 데 도움이 됩니다. 매일 400g의 과일과 채소를 섭취하면 체중을 유지하고 면역 체계를 강화하는 데 도움이 됩니다. 이 제품은 100g당 80%의 권장량을 포함하고 있습니다. 시금치, 당근, 사과, 블루베리와 같은 다양한 신선한 과일과 채소를 섭취하세요.' }
             ];
         } else if (nutrient === "섬유") {
             return [
-                { threshold: 0.9, color: 'rgba(200, 56, 29, 1)', level: '0', comment: '매우 낮음' },
-                { threshold: 1.9, color: 'rgba(200, 56, 29, 1)', level: '1', comment: '매우 낮음' },
-                { threshold: 2.8, color: 'rgba(226, 130, 48, 1)', level: '2', comment: '낮음' },
-                { threshold: 3.7, color: 'rgba(248, 205, 70, 1)', level: '3', comment: '보통' },
-                { threshold: 4.7, color: 'rgba(96, 186, 68, 1)', level: '4', comment: '높음' },
-                { threshold: 5.6, color: 'rgba(55, 125, 69, 1)', level: '5', comment: '매우 높음' }
+                { threshold: 0.9, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 낮은 섬유', description:'하루 25g 미만의 매우 낮은 섬유질 섭취는 소화기 및 심혈관 질환의 위험을 증가시킵니다. 섬유질은 건강에 매우 중요하므로 섬유질이 풍부한 음식을 식단에 다시 포함시키는 것이 필요합니다. 병아리콩이나 검은콩과 같은 콩류를 더 많이 섭취하세요.' },
+                { threshold: 1.9, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 낮은 섬유', description:'하루 25g 미만의 매우 낮은 섬유질 섭취는 소화기 및 심혈관 질환의 위험을 증가시킵니다. 섬유질은 건강에 매우 중요하므로 섬유질이 풍부한 음식을 식단에 다시 포함시키는 것이 필요합니다. 병아리콩이나 검은콩과 같은 콩류를 더 많이 섭취하세요.' },
+                { threshold: 2.8, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '낮은 섬유', description:'하루 25g 미만의 섬유질 섭취는 변비와 같은 소화 문제를 일으킬 수 있으며, 만성 질환의 위험을 증가시킬 수 있습니다. 권장 섭취량은 100g당 4.7g입니다. 현미밥이나 통밀빵과 같은 통곡물 식품을 섭취하여 섬유질 섭취를 늘리세요.' },
+                { threshold: 3.7, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '적당한 섬유', description:'섬유질의 적당한 섭취는 소화를 돕지만, 권장량에는 미치지 못합니다. 섬유질 섭취를 늘리면 소화기 및 심장 질환을 예방하는 데 더 도움이 될 수 있습니다. 권장 섭취량은 100g당 4.7g입니다. 케일, 시금치와 같은 잎이 많은 채소를 더 많이 섭취하세요.' },
+                { threshold: 4.7, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '높은 섬유', description:'섬유질은 장운동을 규칙적으로 유지하여 소화 건강을 돕습니다. 섬유질의 적당한 섭취는 유익하지만, 조금 더 섭취량을 늘리면 긍정적인 효과가 더 좋아질 수 있습니다. 하루 최대 25g과 100g당 4.7g을 섭취하는 것이 좋습니다. 스무디나 요거트에 치아씨드나 견과류를 추가하여 섬유질 섭취를 늘리세요.' },
+                { threshold: 5.6, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 높은 섬유', description:'섬유질은 소화 건강을 촉진하고 심장병을 예방하는 데 중요한 역할을 합니다. 규칙적으로 섭취하면 소화기 건강을 개선하고 콜레스테롤 수치를 조절하는 데 도움이 됩니다. 이 제품은 100g당 4.7g의 권장 섬유질을 포함하고 있으며, 하루에 최대 25g을 섭취하는 것이 좋습니다. 귀리, 강낭콩, 렌틸콩과 같은 고섬유질 식품을 식단에 포함시키세요.' }
             ];
         } else if (nutrient === "단백질") {
             return [
-                { threshold: 1.6, color: 'rgba(200, 56, 29, 1)', level: '0', comment: '매우 낮음' },
-                { threshold: 3.2, color: 'rgba(200, 56, 29, 1)', level: '1', comment: '매우 낮음' },
-                { threshold: 4.8, color: 'rgba(226, 130, 48, 1)', level: '2', comment: '낮음' },
-                { threshold: 6.4, color: 'rgba(248, 205, 70, 1)', level: '3', comment: '보통' },
-                { threshold: 8, color: 'rgba(96, 186, 68, 1)', level: '4', comment: '높음' },
-                { threshold: 9.6, color: 'rgba(55, 125, 69, 1)', level: '5', comment: '매우 높음' }
+                { threshold: 1.6, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 낮은 단백질', description:': 하루 60g 미만의 단백질 섭취는 심각한 결핍을 초래하여 근육과 면역 체계를 약화시킬 수 있습니다. 균형을 회복하고 건강에 해로운 영향을 피하기 위해 100g당 8g까지 단백질 섭취를 늘리는 것이 중요합니다. 단백질 쉐이크나 단백질 바를 섭취하여 일일 단백질 요구량을 충족하세요.' },
+                { threshold: 3.2, color: 'rgba(200, 56, 29, 1)', level: 'E', comment: '매우 낮은 단백질', description:': 하루 60g 미만의 단백질 섭취는 심각한 결핍을 초래하여 근육과 면역 체계를 약화시킬 수 있습니다. 균형을 회복하고 건강에 해로운 영향을 피하기 위해 100g당 8g까지 단백질 섭취를 늘리는 것이 중요합니다. 단백질 쉐이크나 단백질 바를 섭취하여 일일 단백질 요구량을 충족하세요.' },
+                { threshold: 4.8, color: 'rgba(226, 130, 48, 1)', level: 'D', comment: '낮은 단백질', description:'하루 60g 미만의 단백질 섭취는 근육량 감소와 체력 저하를 초래할 수 있습니다. 100g당 8g(또는 하루 60g)으로 단백질 섭취를 늘리는 것이 중요합니다.참치, 살코기 스테이크 또는 아몬드와 같은 음식을 통해 단백질 섭취를 늘리세요.' },
+                { threshold: 6.4, color: 'rgba(248, 205, 70, 1)', level: 'C', comment: '적당한 단백질', description:'단백질의 적당한 섭취는 신체 요구를 충족하는 데 충분하지만, 근육 건강에 최대한의 이점을 제공하지는 않습니다. 100g당 8g(또는 하루 60g)을 섭취하면 근육량을 더 잘 유지하고 회복을 개선할 수 있습니다. 그릭 요거트나 치즈와 같은 유제품을 섭취하여 단백질 섭취를 늘리세요.' },
+                { threshold: 8, color: 'rgba(96, 186, 68, 1)', level: 'B', comment: '높은 단백질', description:'단백질은 근육을 형성하고 조직의 건강을 유지하는 데 기여합니다. 일일 필요량에 거의 도달했지만, 섭취량을 약간 늘리면 근육 회복과 전반적인 건강을 더 잘 지원할 수 있습니다. 하루 60g과 100g당 8g까지 섭취하는 것이 좋습니다. 렌틸콩이나 두부와 같은 식물성 단백질을 추가하여 단백질 섭취를 다양화하세요.' },
+                { threshold: 9.6, color: 'rgba(55, 125, 69, 1)', level: 'A', comment: '매우 높우 단백질', description: '단백질은 근육 회복과 건설뿐만 아니라 신체 조직의 건강 유지에 필수적입니다. 근육량을 유지하고 신진대사를 조절하는 데 도움이 됩니다. 신체 요구를 충족하기 위해 충분한 양의 단백질을 섭취하는 것이 좋으며, 100g당 약 8g(하루 60g)을 섭취해야 합니다. 닭고기, 생선, 달걀과 같은 저지방 단백질을 섭취하여 일일 단백질 섭취량을 유지하세요.' }
             ];
         }
     })();
@@ -1657,52 +1918,54 @@ function update단백질(score) {
             fillColor = segments[i].color;
             level = segments[i].level || level;
             comment = segments[i].comment || comment;
+            description = segments[i].description;
             break;
         }
     }
 
-    // Applique la couleur à la barre de remplissage
-    filledBar.style.width = `${fillPercentage}%`;
-    filledBar.style.backgroundColor = fillColor;
+arrow.style.fill = fillColor; // Applique la couleur de la barre à la flèche
 
-    // Met à jour les labels
-    const scaleLabels = document.querySelector('.scale-labels');
-    scaleLabels.innerHTML = '';
-    labels.forEach((label, index) => {
-        const labelValue = parseFloat(label);
-        const labelPosition = ((labelValue / maxScale) * scaleWidth);
-        const labelElement = document.createElement('div');
-        labelElement.className = 'label';
-        labelElement.textContent = label;
-        labelElement.style.left = `${labelPosition}px`;
-        scaleLabels.appendChild(labelElement);
-    });
+// Met à jour les labels
+const scaleLabels = document.querySelector('.scale-labels');
+scaleLabels.innerHTML = ''; // Vider le contenu existant des labels
+
+// Exemple de pourcentages pour les espaces entre les labels
+let cumulativePosition = 0; // Position cumulative pour placer les labels correctement
+
+labels.forEach((label, index) => {
+    const labelElement = document.createElement('div');
+    labelElement.className = 'scale-label'; // Classe spécifique à chaque label
+    labelElement.textContent = label;
+
+    // Calculer la position du label en pourcentage
+    labelElement.style.position = 'relative'; // Positionner absolument chaque label
+    labelElement.style.left = `${cumulativePosition}%`; // Placer le label en fonction de la position cumulative
+
+    // Ajouter l'élément au DOM
+    scaleLabels.appendChild(labelElement);
+
+    // Ajouter l'espacement pour le prochain label si ce n'est pas le dernier
+    if (index < spaceBetween.length) {
+        cumulativePosition += spaceBetween[index];
+    }
+
+});
+
 
     // Met à jour le cercle de rang et le commentaire
     const rankCircle = document.querySelector('.rank-circle');
     const rankLetter = document.getElementById('level-letter');
     const rankComment = document.getElementById('commentaire-rank');
+    const nutrientDescription = document.getElementById('nutrientDescription');
 
     rankCircle.style.backgroundColor = fillColor;
     rankLetter.textContent = level;
     rankComment.textContent = comment;
+    nutrientDescription.textContent = description;
     rankComment.style.color = fillColor;
+
 }
-
-    document.querySelectorAll('.bloc-results a').forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            const nutrient = event.target.closest('a').id.replace('Link', '');
-            const value = parseFloat(document.getElementById(nutrient).textContent) || 0;
-            const unit = units[nutrient] || ''; 
-            const description = descriptions[nutrient] || "Détails non disponibles.";
-            
-            showSubpage(nutrient, value, unit, description);
-            updateScale(value, nutrient);
-        });
-    });
 });
-
 
 window.onload = function() {
     const product = JSON.parse(sessionStorage.getItem('scannedProduct'));
@@ -1716,7 +1979,7 @@ window.onload = function() {
 //todo:
 //reassayer de mettre une bande multi-couleurs pour le scale avec une flèche. 
 //-> ca pourrait fonctionner avec une correcte utilisation des standards (par couleurs)
-//changer fleche retour 
+//comprendre pk y a des bandes blanches sur les côtés et dessous
 
     </script>
 </body>
