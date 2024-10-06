@@ -559,13 +559,14 @@ hr {
 
 
 .phone-frame {
+   width: 90%;
+    height: 100%;
+    overflow-y: auto; /* Faire défiler le contenu en cas de débordement */
     background-color: white;
     flex-direction: column;
+    position: relative; /* S'assurer que les éléments enfants sont positionnés relativement à cet élément */
     justify-content: center;
-    height: 100vh; /* S'ajuste à la hauteur de l'écran */
-    overflow: hidden; /* Cache les débordements verticaux */
-    display: flex; /* Pour utiliser flexbox */
-    position: relative; /* Pour fixer les éléments en haut */
+    padding: 16px;
 }
         
 .screen1 {
