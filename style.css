@@ -32,7 +32,6 @@ body {
 .phone-frame {
     width: 360px; /* Largeur du cadre du téléphone */
     height: 775px; /* Hauteur actuelle du cadre du téléphone */
-    margin-top: -6px; /* Marge négative pour augmenter la hauteur par le dessus */
     box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur et la hauteur de l'élément */
 }
 
