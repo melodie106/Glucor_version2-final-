@@ -55,6 +55,15 @@
         <div id="식품명"class="product-title"></div>
         <div id="불명" class="불명"></div>
 
+        <div class="hr4"></div>
+
+          <div class="product-overallrank">
+
+            <div class="line-align">
+              <div class="p1">영양 총점</div>               
+              <div class="commentaire-overall-rank"></div>
+          </div>
+
         <div id="progressContainerMain">
           <div class="progress-bar-main">
               <div class="section-main dark-green">
@@ -73,14 +82,9 @@
                   <span>E</span>
               </div>
           </div>
-      </div>      
 
-        <div class="rectangle-overall">
-            <div class="product-overallrank">
-              <div class="overall-rank-circle">
-                <div id="총점수" class="overall-rank-letter"></div></div>
-                <div class="p1">영양 총점
-                <div class="commentaire-overall-rank"></div></div>
+                    <div class="overall-rank-circle">
+                <div id="총점수" class="overall-rank-letter"></div></div>       
               </div>
             </div>
         </div>
@@ -88,7 +92,6 @@
 </div>
 
 </div>
-<div class="hr2"></div>
 <div class="screen2">
 
 <div class="bloc-h2-1">
@@ -559,27 +562,30 @@ hr {
 
 
 .phone-frame {
-   width: 90%;
+    width: 100%;
     height: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
     overflow-y: auto; /* Faire défiler le contenu en cas de débordement */
     background-color: white;
     flex-direction: column;
     position: relative; /* S'assurer que les éléments enfants sont positionnés relativement à cet élément */
     justify-content: center;
-    padding: 16px;
 }
-        
+   
 .screen1 {
     background-color: white;
     flex-direction: column;
     justify-content: center;
     padding-top: 16px;
+    padding-bottom: 8px;
+
 }
 
 .screen2 {
     flex-direction: column;
     justify-content: center;
-    padding-top: 1px;
+    padding-top: 8px;
+    padding-bottom: 20px;
     background-color: rgb(248, 248, 248); /* Changez cette couleur à celle que vous souhaitez */   
 }
 
@@ -596,14 +602,10 @@ hr {
       width: 120px;
     }
     
-    .alignement-info-produit {
-      display: flex;
-      width: 100%;
-      max-width: 198px;
-      flex-direction: column;
-      align-items: start;
-      justify-content: start;
-    }
+.alignement-info-produit {
+  width: 100%; /* S'assurer que le parent a une largeur suffisante */
+}
+
     .product-title {
       color: #363A3C;
       align-self: stretch;
@@ -613,12 +615,7 @@ hr {
       margin-top: -6px;
     }
 
-    .rectangle-overall{
-      margin-top: 12px;
-      margin-bottom: -4px;
-      border-radius: 8px;       /* Coins arrondis */
-      background-color: rgb(248, 248, 248);
-    }
+
 
     .불명 {
       color: #888888;
@@ -630,27 +627,67 @@ hr {
       text-justify: inter-word;
     }
 
+   
+    .line-align {
+    margin-bottom: 10px;
+    display: flex; /* Aligner les éléments en ligne */
+    align-items: center; /* Centrer verticalement */
+    justify-content: space-between; /* Ajoute de l'espace entre les éléments si nécessaire */
+    width: 90%; /* S'assurer que la ligne occupe toute la largeur disponible */
+}
+
+.p1, .commentaire-overall-rank {
+  font: 400 14px/1 NanumGothic, sans-serif;
+  letter-spacing: -0.5%;
+  line-height: 1.5;
+  color: #888888;
+}
+
+.p1 {
+  margin-right: 16px; /* Espacement entre les deux éléments */
+}
+
+.commentaire-overall-rank {
+  margin-left: 0; /* Supprimer la marge à gauche */
+  font: 500 14px/1 NanumGothic, sans-serif;
+}
+
+
+.hr4 {
+  border: 1px solid white; /* Bordure blanche pour harmoniser avec le fond */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Ajoute une ombre portée pour un effet de surélévation */
+    margin-top : 8px;
+    margin-bottom : 8px;
+}
+
     #progressContainerMain {
-    width: 100%;
+    width: 90%; /* Assurez-vous qu'il occupe toute la largeur */
     margin-bottom: 4px;
+    padding: 0; /* Réinitialiser tout padding */
 }
 
 .progress-bar-main {
-    display: flex; /* Utiliser Flexbox pour répartir les sections */
-    width: 100%;
-    height: 11px; /* Ajuster la hauteur de la barre */
+    display: flex;
+    width: 100%; /* S'assurer que la barre occupe 100% de l'espace */
+    padding: 0;
+    margin: 0;
 }
 
 .section-main {
-    flex: 1; /* Chaque section prend une largeur égale */
+    flex: 1; /* S'assurer que chaque section prend une largeur égale */
     display: flex;
-    justify-content: center; /* Centrer les lettres horizontalement */
-    align-items: center; /* Centrer les lettres verticalement */
-    color: white; /* Couleur du texte */
-    font: 700 9px/1 NanumGothic, sans-serif;
-  }
+    justify-content: center; /* Centrage horizontal du texte */
+    align-items: center; /* Centrage vertical du texte */
+    color: white;
+    font: 700 12px/1 NanumGothic, sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 25px; /* Hauteur par défaut des sections */
+    opacity: 0.5;
+    padding: 0; /* Supprimer tout padding involontaire */
+    margin: 0; /* Supprimer toute marge entre les sections */
+}
 
-/* Arrondir les coins seulement pour les extrémités */
 .section-main:first-child {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -661,36 +698,29 @@ hr {
     border-bottom-right-radius: 8px;
 }
 
-
+/* Lorsque la section est agrandie */
+.section-large {
+    border-radius: 3px;
+    flex: 1.7; /* Largeur étendue */
+    font-size: 14px;
+    transform: scaleY(1.5); /* Agrandir verticalement depuis le centre */
+    opacity: 1.5;
+    border: 2px solid white; /* Ajouter un contour blanc */
+    margin: 0; /* S'assurer qu'il n'y a pas de marges ajoutées */
+}
     
-    .product-overallrank {
-      display: flex;
-      margin : 8px;
-      align-items: center;
-      
-    }
+    .overall-rank-letter, .overall-rank-circle {
+    display: none; /* Cacher le texte */
+}
 
-    .overall-rank-circle {
-      width: 35px; 
-      height: 35px;
-      border-radius: 50%;
-      display: flex; /* or inline-flex */
-      align-items: center; 
-      justify-content: center;
-    }
 
-    .overall-rank-letter{
-      color: white;
-      font: 600 17px/1 NanumGothic, sans-serif;
-      text-align: left;
-    }
-
-    .commentaire-overall-rank, .commentaire-rank {
+    .commentaire-rank {
       color: #878D91;
       letter-spacing: -0.5%;
       font: 400 14px NanumGothic, sans-serif;
       text-align: left;
     }
+
 
     .overall-rank {
       color: grey;
@@ -766,7 +796,6 @@ hr {
 
 .bloc-h2-1 {
     display: flex;
-    margin-top: 1px;
     align-items: center;
     gap: 40px 51px;
     color: #000;
@@ -782,13 +811,6 @@ hr {
   margin: auto 0;
   color: #363A3C;
 
-}
-
-.p1 {
-  font: 500 12px/1 NanumGothic, sans-serif;
-  color: #b0b0b0;
-  margin-left: 8px;  
-  line-height: 1.5;
 }
 
 .base-quantite{
@@ -1285,28 +1307,30 @@ function displayProductDetails(product) {
     reorderNutrientBlocksAlternately();
 }
 
-
 function update총점수(score) {
-    const rankCircle = document.querySelector('.overall-rank-circle');
-    const rankLetter = document.getElementById('총점수');
+    const sections = document.querySelectorAll('.section-main');
     const rankComment = document.querySelector('.commentaire-overall-rank');
 
     let rankInfo;
-  if (score >= -15 && score <= -1) {
-    rankInfo = { color: 'rgba(55, 125, 69, 1)', letter: 'A', comment: '건강에 매우 좋음' }; // Vert
-  } else if (score >= 0 && score <= 2) {
-    rankInfo = { color: 'rgba(96, 186, 68, 1)', letter: 'B', comment: '건강에 좋음' }; // Vert clair
-  } else if (score >= 3 && score <= 10) {
-    rankInfo = { color: 'rgba(248, 205, 70, 1)', letter: 'C', comment: '건강에 적당함' }; // Jaune
-  } else if (score >= 11 && score <= 18) {
-    rankInfo = { color: 'rgba(226, 130, 48, 1)', letter: 'D', comment: '건강에 나쁨' }; // Rouge
-  } else if (score >= 19 && score <= 40) {
-    rankInfo = { color: 'rgba(200, 56, 29, 1)', letter: 'E', comment: '건강에 매우 나쁨' }; // Rouge foncé
-  } 
+    if (score >= -15 && score <= -1) {
+        rankInfo = { index: 0, comment: '건강에 매우 좋음', color: 'rgba(55, 125, 69, 1)' }; // A
+    } else if (score >= 0 && score <= 2) {
+        rankInfo = { index: 1, comment: '건강에 좋음', color: 'rgba(96, 186, 68, 1)' }; // B
+    } else if (score >= 3 && score <= 10) {
+        rankInfo = { index: 2, comment: '건강에 적당함', color: 'rgba(248, 205, 70, 1)' }; // C
+    } else if (score >= 11 && score <= 18) {
+        rankInfo = { index: 3, comment: '건강에 나쁨', color: 'rgba(226, 130, 48, 1)' }; // D
+    } else if (score >= 19 && score <= 40) {
+        rankInfo = { index: 4, comment: '건강에 매우 나쁨', color: 'rgba(200, 56, 29, 1)' }; // E
+    }
 
-    // Appliquer les changements
-    rankCircle.style.backgroundColor = rankInfo.color;
-    rankLetter.textContent = rankInfo.letter;
+    // Réinitialiser toutes les sections pour leur taille normale
+    sections.forEach(section => section.classList.remove('section-large'));
+
+    // Agrandir la section correspondante au score (largeur et hauteur)
+    sections[rankInfo.index].classList.add('section-large');
+
+    // Mettre à jour le commentaire et appliquer la couleur correspondante
     rankComment.textContent = rankInfo.comment;
     rankComment.style.color = rankInfo.color;
 }
